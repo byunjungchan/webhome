@@ -15,43 +15,46 @@
            <img src="./img/line.png" alt=""><br>
            <img class="h1_txt" src="./img/h1_txt.png" alt="">
        </div>
-        <section>
-            <div class="sectionPart1">
-                <ul>
-                    <li class="one"></li>
-                    <li class="two"></li>
-                    <li class="thr"></li>
-                </ul>
+        <div class="section1">
+            <div class="content">
+                <div class="list1"></div>
+                <div class="list2"></div>
+                <div class="list3"></div>
             </div>
-        </section>
-            
-            
-        <section>
-            <div class="sectionPart2">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-        </section>
+        </div>
         
-        <section>
-            <div class="sectionPart3">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+        
+        <div class="section2">
+            <div class="content">
+                <div class="list1"></div>
+                <div class="list2"></div>
+                <div class="list3"></div>
+                <div class="list4"></div>
+                <div class="list5"></div>
+                <div class="list6"></div>
+                <div class="list7"></div>
             </div>
-        </section>
+        </div>
+        
+        
+        <div class="section3">
+            <div class="content">
+                <div class="list1"></div>
+                <div class="list2"></div>
+                <div class="list3"></div>
+            </div>
+            
+        </div>
+        
+        
+        <div class="section4">
+            <div class="content">
+                <div class="list1"></div>
+                <div class="list2"></div>
+                <div class="list3"></div>
+            </div>
+            
+        </div>
     </div>
     
     
