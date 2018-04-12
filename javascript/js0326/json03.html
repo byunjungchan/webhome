@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON</title>
+</head>
+<body>
+    <script>        
+        //json의 data type
+        //string, number, object, array(),
+        var jsonOb={
+            'name':'jsonName',
+            'age':20,
+            'jsonSub':{
+                'subName':'subName',
+                'subAge':20
+            },
+            'jsonArrName':['soyo','0823','soyo0823'],
+            'select':true,
+            'nullTrue':null
+        };
+        
+        console.log(jsonOb.name+"type : "+(typeof jsonOb.name));
+        console.log(jsonOb.jsonSub.subName+"type : "+(typeof jsonOb.jsonSub.subName));
+        console.log(jsonOb.jsonSub.subAge+"type : "+(typeof jsonOb.jsonSub.subAge));
+        console.log(jsonOb.jsonArrName+"type : "+(typeof jsonOb.jsonArrName));
+        console.log(jsonOb.select+"type : "+(typeof jsonOb.select));
+        console.log(jsonOb.nullTrue+"type : "+(typeof jsonOb.nullTrue));
+        
+        //for문 이용해서 다 가져오기
+        console.log(jsonOb.jsonArrName.length);
+        
+        console.log(jsonOb.jsonArrName[0]);
+        
+        for(var i=0;i<jsonOb.jsonArrName.length;i++){
+            
+            console.log(jsonOb.jsonArrName[i]);
+        }
+        
+        
+    </script>
+</body>
+</html>

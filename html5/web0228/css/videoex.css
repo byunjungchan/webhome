@@ -1,0 +1,196 @@
+@charset "utf-8";
+body{
+/*     overflow: hidden; */
+}
+#wrap{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.hmenu{
+    width: 200px;
+    height: 50px;
+    border: 1px solid;
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    z-index: 3;
+    
+}
+
+.gnb{
+    width: 30px;
+    height: auto;
+/*    border: 1px solid;*/
+    position: fixed;
+    right: 30px;
+    top: 500px;
+    z-index: 3;
+}
+
+.section{
+    width: 100%;
+    height: 100%;
+    border: 10px solid #ff99f900;
+    box-sizing: border-box;
+}
+
+
+/*hmenu 시작*/
+
+
+.hmenu{
+    background: #00000000;
+    overflow: hidden;
+}
+
+.hmenu>ul>li{
+    border: 1px solid;
+    width: 50px;
+    height: 50px;
+    float: left;
+    box-sizing: border-box;
+}
+
+
+/*gnb 시작*/
+
+
+.gnb>ul>li{
+    width: 30px;
+    height: 30px;
+/*    border: 1px solid;*/
+}
+
+.gnb>ul>li> span.circle{
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #f00;
+    border-radius: 50%;
+    margin: 10px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.gnb>ul>li> span.circle:hover{
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+.gnb>ul>li> span.text{
+    display: none;
+    width: 100px;
+    background: #ffff0000;
+    position: relative;
+    left: -100px;
+    top: -26px;
+    text-align: right;
+    color: #fff;
+}
+
+.gnb>ul>li> span.circle:hover ~ span.text{
+    display: block;
+}
+
+
+
+
+
+/*section 시작*/
+
+
+.section.a{
+    position: relative;
+}
+
+.section.a .toptext{
+    width: auto;
+    height: auto;
+/*    background: #ff0;*/
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    font-size: 40px;
+    line-height: 30px;
+    font-family: 'din';
+    color:#fff;
+}
+
+.section.a .maintext{
+    width: auto;
+    height: auto;
+/*    background: #ffeeee;*/
+    position: absolute;
+    right: 200px;
+    bottom: 100px;
+    color: #ff0;
+    font-family: 'din';
+}
+
+.section.a .maintext span.line{
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: #ccc;
+    margin: 20px 0;
+}
+
+.section.a .maintext p.p1{
+/*    background: #fff;*/
+    font-size: 25px;
+    letter-spacing: 6px;
+}
+
+
+.section.a .maintext p.p2{
+/*    background: #fff;*/
+    font-size: 25px;
+    letter-spacing: 6px;
+    text-decoration: underline;
+}
+
+.section.a .maintext p.p2 span.phone{
+    text-decoration: none;
+}
+
+.section.a .maintext p.p3{
+/*    background: #fff;*/
+    font-size: 55px;
+    letter-spacing: 6px;
+    line-height: 50px;
+    text-decoration: underline;
+}
+
+.section.a .movie{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position:absolute;
+    left:0px;
+    top:0px;
+}
+
+.section.a .movie video{
+  width:3000px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

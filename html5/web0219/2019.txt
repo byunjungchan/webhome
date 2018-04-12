@@ -1,0 +1,248 @@
+html tag(element)로 이루어졌다.
+
+
+1. block
+
+*자동 줄바꾸기
+*withd, height 설정 할 수 있다.
+
+div, p, table, form, ul,li,ol 등
+
+2. inline
+
+*자동으로 부모태그의 기준 좌표(왼쪽 오른쪽으로 가로정렬)
+*withd, height 설정 불가
+
+a, span 등
+
+
+
+
+실습
+
+.nav 750*오토
+   nav ul li*18 125*70, float,
+
+hover 마우스 오버시 스타일
+      마우스 아웃시 원래스타일
+
+background속성을 이용했다.
+
+
+1.기획
+2.요구/분석(설문, 스토리보드)
+3.실행(제작)
+4.테스트
+5.배포
+6.유지/보수
+
+
+#wrap -> 텝치면 div id 태그나옴
+.nav -> div class 나옴
+
+
+css
+선택자{속성:값;}
+
+
+
+**컨텐츠의 크기**
+box-sizing
+
+
+1. 기본(생략, content-box)
+너비 = width + padding + border
+   ex) 100px + 10px + 5px
+100px 짜리 만든다하면 패딩 보더가 들어간다고 하면
+그걸 계산 해서 만들어야 한다
+
+box-sizing: content-box
+
+2. border-box
+너비 = width(padding+border) "처음 정해진 width 값"
+ 
+
+
+
+
+프로젝트 수행(제박
+1.html 구조
+2.css 디자인
+
+
+=============
+
+가장오래되고 자주 사요오디는 태그
+
+a 는 인라인 태그다
+a태그는 반드시 값을 설정해야한다(빈공간 있으면 오류남gg)
+
+"가상태그"
+
+a:link "링크가 걸려있으면"
+** a:hover "마우스 오버시"
+a:visited "액션을 실행하고 나서"
+ a:active "마우스 눌렀을때"
+
+***밑줄 속성을 text-decoration:none 밑줄을 없앰
+
+
+taget "이동방식"
+
+_blank "새창 띄워서 이동"
+_parent "부모창으로 이동" 몬말이지
+_self "기존창" <기본값  back(), go()
+_top "기존창"
+
+taget의 대한 값이 없으면 self로 먹힘
+
+목록
+
+li >> 네비게이션 설정에 필수
+
+li > a 
+
+
+
+**** 반응형 웹 작업시 ****
+
+img 작업시 width:100%; height:auto;
+
+1. img 이름은 끝자리 0번부터
+ex) bg_0.jpg
+    bg_00.jpg 
+
+여튼 0부터 하자
+
+2. img이름 가독성: "누구나 이해 할 수 있는"
+
+3. 한글 이름 사용 금지
+
+
+
+=======================
+
+background
+
+파일명 bgapple.html 만들고 css저장
+
+#wrap 100%*auto
+
+.section 1200*auto 가로가운데
+
+	.section.sec1*3 width:100% height:600px
+
+	.section.sec2 1200*auto overflow:hidden
+
+	  ul>li*6  float:left
+	
+
+.footer 1200*auto 가로가운데 overflow:hidden
+
+	ul>li*5  float:left
+
+
+
+**부모크기가 고정형(px)이면 자식이나 하위는 변동형(%)로 설정한는게 좋다
+
+
+이따 git 설치
+
+
+===
+
+background-color: 배경색상 
+		red,black
+		#ff0000 16진수
+		rgb(255,0,0)
+		rgba(255,0,0,1)
+
+background-image: url(경로)
+
+ URL(Uniform Resource Locator, 문화어: 파일식별자, 유일자원지시기)은 네트워크 상에서 자원이 어디 있는지를 알려주기 위한 규약이다.
+
+흔히 웹 사이트 주소로 알고 있지만, URL은 웹 사이트 주소뿐만 아니라 컴퓨터 네트워크상의 자원을 모두 나타낼 수 있다. 그 주소에 접속하려면 해당 URL에 맞는 프로토콜을 알아야 하고, 그와 동일한 프로토콜로 접속해야 한다.
+
+FTP 프로토콜인 경우에는 FTP 클라이언트를 이용해야 하고, HTTP인 경우에는 웹 브라우저를 이용해야 한다. 텔넷의 경우에는 텔넷 프로그램을 이용해서 접속해야 한다.
+
+background-repeat:반복유무/방법
+
+background-size:cover; "부모태그의 width값에 따라..
+			height가 자동으로(같은 비율)
+
+background-position:50%(정중앙)
+
+background-attachment:fixed;   <-이거, 이미지 얌전히 있고 스코롤내리는거
+
+
+background:색상 이미지 반복 위치;
+
+
+
+
+float:  overflow;
+	clear:both;
+	:after
+
+=========================
+
+ppt 
+
+background 실습
+1. 디텍토리 구조
+2. html
+3. css
+4. 브라우저 구현
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

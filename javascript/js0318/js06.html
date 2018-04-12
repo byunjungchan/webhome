@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자바스크립트</title>
+</head>
+<body>
+    <script>
+    //자바스크립트 객체 만든 방법 세번째
+        
+        function Car(carName,carCoin,carWeight,carYear){
+            
+            this.carName=carName;
+            this.carCoin=carCoin;
+            this.carWeight=carWeight;
+            this.carYear=carYear;
+            this.carMethod=function(){
+                
+                console.log("자동차 무게: "+this.carWeight);
+                console.log("자동차 가격: "+this.carCoin);
+                console.log("자동차 이름: "+this.carName);
+                console.log("자동차 년식: "+this.carYear);
+                return this.carYear-1900;
+                
+            }
+            
+        }
+            //생성자(객체를 생성 할 수 있는 매서드)
+        var car1=new Car("Car1",1000,2000,1991);//매서드();
+        var car2=new Car("Car2",2000,3000,2018);
+        
+        console.log("car1 객체")
+        console.log(car1);
+        console.log(car1.carName);
+        console.log(car1.carCoin);
+        console.log(car1.carWeight);
+        console.log(car1.carYear);
+        console.log(car1.carMethod());
+        
+        console.log("car2 객체")
+        console.log(car2);
+        console.log(car2.carName);
+        console.log(car2.carCoin);
+        console.log(car2.carWeight);
+        console.log(car2.carYear);
+        console.log(car2.carMethod());
+        
+    
+    
+    
+    </script>
+</body>
+</html>

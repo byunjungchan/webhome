@@ -1,0 +1,133 @@
+
+
+== 0316 ==
+
+이벤트 "효과 >>> 마우스, window, 키보드 >>> 동작 >> 발생
+
+mouse event      taget(대상) >> event.target
+
+click "마우스를 눌렀다 '뗏'을 때"
+
+mousedown "눌렀을 때"
+mouseup "눌렀다 뗏을때"
+mouseover "올렸을대"
+mouseout "벗어났을때"
+mousemove "움직였을때"
+
+
+
+window
+
+load "윈도우에 로드됐을때"
+upload "윈도우에서 사라졌을때"
+scroll "윈도우 스크롤"
+resize "윈도우 크기가 변할때"
+
+
+keyboard
+
+keyup "키보드키판을 뗏을때" ajax, 총
+keydown "키보드키판 눌렀을때"
+
+
+.queryselectorall('btn')[2] >>> 7
+.queryselectorall('button')[2] >>> 7
+
+.getelmentsbyclassname('btn)[2] >> .7
+.getelmentsbyname('button')[2] >> .7
+
+var sevenbtn=getelementsbyclassname('sevent')[0]
+
+
+1. sevenbtn.addeventlistener('click',sevenfun);
+
+function(){
+
+
+
+}
+
+2. sevenbtn.addeventlistener('click',function()){
+
+
+
+
+}
+
+
+sevenbtn.onclick=함수명;
+
+function 함수명(){
+
+
+
+}
+
+
+
+button .back을 콘솔에 나오게 구현해봐요
+
+
+함수
+
+function ninebtn(){
+
+
+
+}
+
+var nineBtn=getElementsByClassName('nine')[0];
+
+
+
+
+function 함수명(){
+
+	// 구현, 처리, 실행, 로직..
+	// return 반환값;// 함수는 return을 만나면 종료
+
+}
+
+
+함수는 호출(call)를 통해서 구현하고 return 값을 반환하고 종료
+
+
+내장함수(자바스크립트 내장함수)
+
+선택자 >. 이벤트 >> 이벤트 리스너(핸들러) >> 함수
+
+function plusfunc(변수, 변수){
+            var 지역변수=num1+num2;
+            console.log(num1+"+"+num2+"="+sum);
+            
+            
+        }
+
+//지역변수는 함수가 종료되면 사라진다(메모리에서~~~~)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

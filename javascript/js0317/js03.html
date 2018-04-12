@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자바스</title>
+</head>
+<body>
+    <button id="btn1">button1</button>
+    <button class="btn2">button2</button>
+    <button class="btn2">button3</button>
+    <button>button4</button>
+    
+    <script>
+        // document.querySelector("#btn1"); //하나만
+        // document.querySelectorAll('.btn2'); // 클래스 선택
+        
+        var btn1id=document.getElementById('btn1'); //아이디 선택자
+        var btn2class=document.getElementsByClassName('btn2'); //클래스 선택자
+        document.getElementsByTagName('button'); //태그 선택자
+        
+        btn2Class[0];
+        btn2Class[1];
+        btntag[3];
+        
+        btn1id.addEventListener('click',func1);//이벤트 캡쳐링, 버블링 >> 제이쿼리
+        btn1id.addEventListener('musedown',function(){ //익명 함수
+                                
+                                func2();
+                                
+                                });
+        
+        btn2Class[0].onclick=func2;
+        btn2Class[0].onmousedown=function(){//익명함수
+            func2();
+        }
+        
+        btn2Class[1].addEventListener("click",function(){
+            func3("이름: 머머머");//익명함수 이용해서 다른 함수 호출
+            
+        })
+        
+        btntag[3].onclick=function(){
+            console.log("두수의 합은:"+func4(100,100));
+        }
+        
+        
+        var num=0;
+        
+        function func1(){
+            //window.alert("func1 함수 호출");
+            console.log("func1 함수 호출 >>"+(num++));
+        }
+        function func2(){
+            //window.alert("func2 함수 호출");
+            console.log("func2 함수 호출 >>"+(num++));
+            return 100;
+        }
+        function func3(name){
+            //window.alert("func3 함수 호출: "+name);
+            console.log(name+:" >> func3 함수 호출 >>"+(num++));
+        }
+        function func4(num1,num2){
+            //window.alert("func4 함수 호출");
+            console.log("func4 함수 호출 >>"+(num++));
+            var sum=num1+num2;
+            return sum;
+        }
+    
+
+    
+    
+    </script>
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,121 @@
+appendChild()
+
+insertBefore()
+
+hasChildNodes() // "있느냐?" >> true, false
+
+removeChild(); //특정 자식노드를 삭제
+
+replaceChild("요소의 값", "변경 값"); //특정 요소의 값을 변경
+
+
+두개가 짝궁
+createElement() 요소를 생성
+
+createTextNode() 생성된 요소에 text값을 set
+
+
+==
+
+
+.bannergallery	w 100% m-w 1200, h 400  relative 가로가운데
+
+ .maingallery	w 100% m-w 1000, h auto 가로가운데
+
+	ul>li*5 250 400 float;left
+
+
+부모.appendChild('요소'); // 요소를 부모의 마지막 자식 뒤에 추가
+부모.insertBefore('요소') "나(부모)의 첫번째자식 앞에 추가"
+
+**하위요소들 부모를 기준으로 상대% 단위로 크기를 설정
+
+
+hasAttribute() //속성(Attribute)가 있느냐?
+
+getAttribute() //선택노드(태그)에 속성을 get
+
+setAttribute() //선택노드(태그)에 속성을 set
+
+
+
+
+
+
+div={
+
+	id:'parent',
+	div={
+
+		class:'gnb'
+		ul={
+
+			li={
+
+				il[0]={
+
+					class:list,
+					textNode={
+						textContent:'menu'
+
+					}
+
+				}
+			}
+		}
+
+	}
+
+}
+
+
+1. getAttribute('src') //값 1을 가져온다.
+
+2. setAttribute("속성", "설정");
+
+
+<img src="값1">
+
+<img src=""> //가져온걸 비어있는 곳에 넣는다
+
+값을 가져와서, set으로 설정후 바꾼다.
+
+ex)
+
+document.getElementsByTagName('a')[0];
+// 태그 속성을 본다.
+
+	<a data-brackets-id="115" id="atag" href="next.html">next</a> 
+
+document.getElementsByTagName('a')[0].getAttribute('href') 
+//get 으로 a태그의 href가 무엇인지 본다
+
+	"next.html"
+
+document.getElementsByTagName('a')[0].setAttribute('href','http://naver.com') 
+//set으로 바꿀 부분과 내용을 넣는다.
+
+	undefined
+
+document.getElementsByTagName('a')[0].getAttribute('href') 
+//get으로 바꿧는지 확인한다.
+
+	"http://naver.com"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

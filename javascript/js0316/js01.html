@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <button>button1</button>
+    <button>button2</button>
+    <button>button3</button>
+    <button>button4</button>
+    
+    
+    
+    
+    <script>
+        
+        var btn=document.getElementsByTagName('button')
+        btn[0].addEventListener('click', fun1);
+        
+//        function fun1(){
+//            console.log("btn[0] click")
+//            return "fun1함수 반환값";
+//            
+//        }
+//        
+//        
+//        
+//        console.log(fun1());//함수 값이 반환되는 시점, 곳
+//        
+//        
+//        function fun2(){
+//            console.log("fun2함수의 로직 구현")
+//            return 10;
+//            
+//        }
+//        
+//        console.log(fun2());
+        
+        function fun1(){
+            func1();
+            
+            
+        }
+        
+        var num=0;
+        
+        function func1(){
+            console.log("매개인자가 없고 반환값없는 함수>> "+num);
+//            return; 함수는 무조건 리턴이 있다. 안써있어도!
+            num++;
+        }
+        
+        btn[1].addEventListener('click',fun2);
+        function fun2(){
+            func2("jung",19);//call
+            
+            
+        }
+        
+        function func2(name, age){
+            console.log("이름: "+name);
+            console.log("나이: "+age);
+            
+            console.log("매개인자가 있고 반환값없는 함수>> "+num);
+            //return; 있을거임
+            
+        }
+        
+        
+        ////////////////////////////////////////////
+        
+        btn[2].addEventListener('click',plus);
+        
+        function plus(){
+                    //parseInt정수형 값으로 변환        //prompt 문자열
+            var num3=parseInt(prompt("첫번째 숫자를 입력해 보세요."));
+            var num4=parseInt(prompt("두번째 숫자를 입력해 보세요."));
+            
+            plusfunc(num3, num4);
+
+            
+        }
+        
+        
+        function plusfunc(num1, num2){
+            var sum=num1+num2;
+            console.log(num1+"+"+num2+"="+sum);
+        }
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </script>
+    
+    
+</body>
+</html>

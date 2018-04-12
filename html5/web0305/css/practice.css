@@ -1,0 +1,235 @@
+@charset "utf-8";
+
+#wrap{
+    width: 100%;
+/*    max-width: 1280px; 반응형 할때 쓰자*/
+    height: 100%;
+/*    margin: 0 auto; max-width 없음 빼자*/
+    background: #5ad5dd;
+    background: -ms-linear-gradient(90deg, #5ad5dd,#2b93d2);
+    background: -moz-linear-gradient(90deg, #5ad5dd,#2b93d2);
+    background: -webkit-linear-gradient(90deg, #5ad5dd,#2b93d2);
+    background: linear-gradient(90deg, #5ad5dd,#2b93d2);
+}
+
+.header{
+    width: 100%;
+    height: 200px;
+    background: #fff0;
+    position: fixed;
+    left: 0;
+    top:0;
+    z-index: 3;
+}
+
+.section{
+    width: 100%;
+    height: 100%;
+/*
+    border: 10px solid #f00a;
+    box-sizing: border-box;
+*/
+    position: relative;
+}
+
+
+
+/*header 시작*/
+
+.header .topmenu{
+    width: 960px;
+    height: 200px;
+    background: #fff2;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 1px 1px 1px #fff3;
+}
+
+.header .topmenu h1.logo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ccc0;
+    color: #0001;
+    font-size: 150px;
+    text-align: center;
+    line-height: 200px;    
+}
+
+.header .topmenu .gnb{
+    width: 100%;
+    height: 50px;
+/*    background: #ff0;*/
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.header .topmenu .gnb>ul>li{
+    width: 12%;
+/*    border: 1px solid;*/
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    box-sizing: border-box;
+}
+
+.header .topmenu .gnb>ul>li:nth-child(1){
+    width: 28%;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+.header .topmenu .gnb>ul>li>a{
+    color: #fffa;
+}
+
+.header .topmenu .gnb>ul>li>a:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+
+
+
+/*section 시작*/
+/*2018-03-05일 수정(나)*/
+
+.section > .contents{
+    width: 1200px;
+    height: 600px;
+/*    border: 1px solid;*/
+    position: relative;
+    margin: 0 auto;
+    top: 300px;
+}
+
+.section > .contents .gallery{
+    width: 500px;
+    height: 600px;
+/*    border: 1px solid;*/
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    
+    background: url(../img/bg0.png) no-repeat 50%;
+    background-size: cover;
+    
+    animation-name: bggallery;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bggallery{
+    20%
+    {background: url(../img/bg0.png) no-repeat;
+    background-size: cover;
+    }
+    40%
+    {background: url(../img/bg1.png) no-repeat;
+    background-size: cover;
+    }
+    60%
+    {background: url(../img/bg2.png) no-repeat;
+    background-size: cover;
+    }
+    80%
+    {background: url(../img/bg3.png) no-repeat;
+    background-size: cover;
+    }
+    
+}
+
+
+/*text 시작*/
+
+.section > .contents .text{
+    width: 700px;
+    height: 600px;
+/*    border: 1px solid;*/
+    position: absolute;
+    box-sizing: border-box;
+    right: 0px;
+    bottom:0;
+    padding: 30px;
+}
+
+.section > .contents .text .sub{
+/*    border: 1px solid;*/
+}
+
+.section > .contents .text .sub.sub1{
+    line-height: 50px;
+    font-size: 40px;
+    color: #fff;
+}
+
+.section > .contents .text .sub.sub2{
+    line-height: 30px;
+    font-size: 20px;
+    color: #fff;
+    margin: 50px 0px 130px;
+}
+
+.section > .contents .text .sub.sub1{
+    line-height: 50px;
+    font-size: 40px;
+    color: #fff;
+}
+
+.section > .contents .text .sub.sub3{
+/*    background: #fff;*/
+    overflow: hidden;
+}
+
+.section > .contents .text .sub.sub3 span.btn{
+    display: block;
+    width: 200px;
+    background: #fff2;
+    float: left;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.section > .contents .text .sub.sub3 span.btn.login{
+    margin-left: 0px;
+    background: #3158d7;
+}
+
+.section > .contents .text .sub.sub3 span.btn.join{
+    float: right;
+    margin-right: 30px;
+    background: #35a0d4;
+}
+
+.section > .contents .text .sub.sub3 span.btn:hover{
+    background: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px #ccca;
+    font-size: 18px;
+    color: #000;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

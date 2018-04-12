@@ -1,0 +1,181 @@
+
+
+
+
+
+
+
+
+
+======
+
+html  tag(element)
+
+<여는 태그></닫는 태그>
+
+<!doctype html>
+<html>
+
+</html>
+
+1.블록(block) 레이아웃
+자동 줄 바꿈
+width, height 설정가능
+width, 설정 하지 않으면 부모태그의 100%
+
+div - 레이아웃
+p - 텍스트 관련
+form - 클라이언트 정보 서버에 전송
+table - 
+
+2.인라인(inline) 특정요소
+자동으로 부모의 왼쪽 부터
+오른쪽으로 정렬
+
+a, span
+
+
+block2.html << 외부 스타일 block2.css
+
+div*4 / width 200*200 각각의 border 1px solid #f00;
+
+box1, box2, box3, box4 클래스명 설정 
+
+각각 div안에 box 에 텍스트 입력
+
+font-size 20px
+colr
+
+display: 기본속성을 변경
+
+block >> inline >> block
+
+클래스의 장점 "여러 태그에 동일 속성 부여"
+
+css 
+
+클래스선택자 가장많이 사용
+
+아이디는 유일,하나 >> 레이아웃 설정
+
+#wrap 전체
+
+
+
+글자 관련 태그
+text-align 텍스트의 가로 정렬
+
+line-height "부모태그의 height와 같게 설정하면
+	     자동으로 세로 가운데가 된다."
+           
+"세로정렬을 할 수 있다."
+"글자행간"
+
+margin "나와 내 부모 또는 다른 태그와의 여백"
+padding "나와 내 자식 태그, 컨텐츠와의 여백"
+
+overflow 흘러넘친다 -> 안보이게 하려면 hidden
+자식이 부모를 넘으면
+
+
+<br> 게행, enter <br/>
+
+<b> 볼드
+<i> 이태릭
+<small> 원래 크기보다 작게
+<sub> 아래첨자
+<sup> 윗첨자
+<ins> 밑줄
+<del> 삭제(가운데 줄)
+
+
+
+text.html
+
+
+목록태그
+
+1. 순서가 있는 태그 ol
+2. 순서가 없는 태그 ul *중요하고 많이 쓰임*
+li
+
+dl,dt,dd
+
+
+<ol>
+
+	<li></li>
+
+</ol>
+
+배열: 같은 태그가 연속으로 배치 
+"같은 자료형 순서에 맞게 연속적으로 배치"
+
+
+block태그를 가로 정렬하는 방법 중 float를 가장 많이 사용
+
+**부모는 height:auto "자식태그 크기에 따라 자동으로 조정"
+
+*** float "붕~~~" "붕 띄워서 부모(상위)태그 중심으로 좌,우에 재배치"
+
+float를 넣으면 자식이 붕떠서 부모의 값이 안들어감
+overflow:hidden "float 설정을 해제 시켜주는 속성"
+
+
+
+.gnb 1000*50px 가로가운데 border 1px solid #ff0000;
+
+
+
+실습
+
+apple.com
+
+appleGnb.html     (reset, 외부스타일, html5)
+appleGnb.css
+
+.nav 100%*50 #222222
+
+	.gnb 1000xauto 가로가운데 overflow:hidden
+
+		ul li*10  100px float:left
+
+			li text-align:center, line-height:50px
+
+li:nth-child(1), li:nth-child(9), li:nth-child(10) 배경이미지
+
+
+css >> hover >> 마우스 오버햇을때 스타일, 마우스를 아웃 하면 원래대로
+
+cursor "마우스 모양"
+
+
+background-image:url(이미지경로);
+배경 이미지를 넣으면 기본적으로 반복이됨
+그래서 repeat를 넣어줌
+
+background-repeat:반복유무;
+background-size:
+
+background-position:
+position 50%하면 가운되됨
+
+background-color:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

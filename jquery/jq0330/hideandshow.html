@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hideandshow</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/reset.css">
+	<style>
+        .box{
+            width: 500px;
+            height: 500px;
+            background: #ccc;
+        }
+        
+        .leftBox{
+            width: 300px;
+            height: 300px;
+            background: #555;
+            position: fixed;
+            top:20px;
+            left: -100%;
+        }
+        h1.logo{
+            width: 100%;
+            height: 100%;
+            line-height: 300px;
+            text-align: center;
+            color: #fff;
+            font-family: 'din';
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button>hide</button>
+    <button>show</button>
+    <button>fadeOut</button>
+    <button>fadeIn</button>
+    <button>toggle</button>
+    <div class="box"></div>
+    
+    <div class="leftBox">
+        
+        <h1 class="logo">soyo</h1>
+        
+    </div>
+    
+    <script>
+        
+        var btn = $('button');
+        var box = $('.box');
+        var leftBox = $('.leftBox');
+        
+        btn.eq(0).on('click', function(e){
+            
+           box.hide(1000, function(){
+               
+               //alert('hide 콜백함수')
+               
+           });
+            
+        });
+        
+        btn.eq(1).on('click', function(e){
+            
+           box.show(1000, function(){
+               
+               //alert('show 콜백함수')
+               
+           });
+            
+        });
+        
+
+        
+        btn.eq(2).on('click', function(e){
+            
+           box.fadeOut(1000, callFunc);
+            
+        });
+        
+        
+        function callFunc(e){
+            
+            leftBox.animate({left:'0'},400, anifunc);
+            
+        };
+        
+        function anifunc(e){
+            
+            $('h1.logo').fadeIn(400);
+            
+        };
+        
+        
+        btn.eq(3).on('click', function(e){
+            
+           box.fadeIn(1000)
+           leftBox.fadeOut(400)
+            
+        });
+        
+        
+        btn.eq(4).on('click', function(e){
+        
+           box.toggle();
+            
+        });
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+    
+    
+</body>
+</html>

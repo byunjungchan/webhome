@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .shoppingmall{
+            width: 800px;
+            height: auto;
+            margin: 0 auto;
+            background: #ccc;
+        }
+        
+        .shoppingmall >ul>li{
+            width: 200px;
+            height: 300px;
+            float: left;
+            border: 1px solid;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            display: block;
+        }
+        .shoppingmall >ul>li .txt{
+            height: 70px;
+            background: #eeffee;
+        }
+        .shoppingmall >ul>li a{
+            display: block;
+            height: 30px;
+            background: #ffeeff;
+        }
+        
+        .layer{
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            position: fixed;
+            left: 0;
+            top:0;
+            display: none;
+        }
+        
+        .layer .box{
+            width: 40%;
+            height: 40%;
+            background: #fff;
+            position: absolute;
+            left: 30%;
+            top: 30%;
+        }
+    
+    </style>
+</head>
+<body>
+   <div class="shoppingmall">
+       <ul>
+           <li class="list">
+               <img src="img/bg0.jpg" alt="">
+               <div class="txt">list첫번째 텍스트</div>
+               <a href="http://naver.com">네이버</a>
+           </li>
+           <li class="list">
+               <img src="img/bg1.jpg" alt="">
+               <div class="txt">list두번째 텍스트</div>
+               <a href="http://daum.net">다음</a>
+           </li>
+           <li class="list">
+               <img src="img/bg2.jpg" alt="">
+               <div class="txt">list세번째 텍스트</div>
+               <a href="http://google.com">구글</a>
+           </li>
+           <li class="list">
+               <img src="img/bg3.jpg" alt="">
+               <div class="txt">list네번째 텍스트</div>
+               <a href="http://nate.com">네이트</a>
+           </li>
+       </ul>
+   </div>
+   
+   <div class="layer">
+       
+       <div class="box">
+           <img src="" alt="" class="imgBox">
+           <div class="boxTxt"></div>
+           <a href="" class="boxLink">이동</a>
+           <button class="close">close</button>
+       </div>
+       
+
+   </div>
+   
+    <script>
+    
+        var list=document.getElementsByClassName('list');
+        var imgBox=document.getElementsByClassName('imgBox')[0];
+        var boxTxt=document.getElementsByClassName('boxTxt')[0];
+        var boxLink=document.getElementsByClassName('boxLink')[0];
+        
+        for(var i=0;i<list.length;i++){
+            list[i].addEventListener('click',listFunc);
+        }
+        
+        function listFunc(e){
+            var imgSrc=e.currentTarget.getElementsByTagName('img')[0].getAttribute('src');
+            var txt=e.currentTarget.getElementsByClassName('txt')[0].textContent;
+            var aLink=e.currentTarget.getElementsByTagName('a')[0].getAttribute('href');
+            
+            layerFun( imgSrc, txt, aLink);
+        }
+        
+        var layer=document.getElementsByClassName('layer')[0];
+        function layerFun( imgSrc, txt, aLink){
+            
+            imgBox.setAttribute('src',imgSrc);
+            boxTxt.textContent=txt;
+            boxLink.setAttribute('href',aLink);
+            layer.style.display="block";
+        }
+        
+        var closebtn=document.getElementsByClassName('close')[0];
+        closebtn.addEventListener('click', function(){
+            
+            layer.style.display="none";
+            
+        });
+    
+    
+    </script>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    
+</body>
+</html>

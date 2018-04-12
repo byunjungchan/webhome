@@ -1,0 +1,427 @@
+@charset "utf-8";
+
+#wrap{
+    width: 100%;
+    height: auto;
+/*    border: 1px solid;*/
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    height: auto;
+/*    border: 1px solid;*/
+    box-sizing: border-box;
+    background: #323232;
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.section{
+    width: 100%;
+    height: 700px;
+/*    border: 0px solid #ccc;*/
+    box-sizing: border-box;
+    
+    
+}
+
+.footer{
+    widows: 100%;
+    height: 300px;
+    background: #ccc;
+}
+
+
+/*header 시작*/
+
+.header .gnb{
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+/*    background: #effff3;*/
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.header .gnb>ul>li>a{
+    width: 10%;
+    line-height: 50px;
+/*    border: 0px solid;*/
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 12px;
+    transition: all 0.2s;
+}
+
+.header .gnb>ul>li>a:hover{
+    color: #ccc;
+}
+
+
+
+/*section 시작*/
+
+.section.sec1{
+    margin-top: 50px;
+    background: #eff;
+    
+}
+
+.section.sec2{
+    background: #eef;
+}
+
+.section.sec3{
+    height: auto;
+    background: #fff;
+    overflow: hidden;
+}
+
+.section.sec3 >ul>li{
+    width: 48.5%;
+    height: 600px;
+    background: #efe;
+/*    border: 0px solid #fff;*/
+    box-sizing: border-box;
+    float: left;
+    margin-top: 1%;
+    
+}
+
+.section.sec3>ul>li.gleft{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+
+
+
+
+.section.sec1{
+    background: url(../img/main01.jpg) no-repeat 50%;
+    position: relative;
+    left: 0;
+    top:0;
+}
+
+.section.sec2{
+    background-color: #f9f0eb;
+    background-image:url(../img/main02.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    
+}
+
+.section.sec3>ul>li.gleft.s01{
+    background: url(../img/s01.jpg) no-repeat 50%;
+
+}
+
+.section.sec3>ul>li.gright.s02{
+    background: url(../img/s02.jpg) no-repeat 50%;
+}
+
+.section.sec3>ul>li.gleft.s03{
+    background-color: #fafafa;
+    background-image:url(../img/s03.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 70%;
+}
+
+.section.sec3>ul>li.gright.s04{
+    background-color: #1a1a1a;
+    background-image:url(../img/s04.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+}
+
+.section.sec3>ul>li.gleft.s05{
+    background: url(../img/s05.jpg) no-repeat 50%;
+}
+
+.section.sec3>ul>li.gright.s06{
+    background-color: #fafafa;
+    background-image:url(../img/s06.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
+}
+
+
+/*text 시작*/
+
+.text1{
+    display: block;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    top:100px;
+    font-weight: bold;
+    font-family: 'din'
+}
+
+.text2{
+    display: block;
+    text-align: center;
+    position: relative;
+    top:100px;
+    
+}
+
+.text3{
+    display: block;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+    top:100px;
+    font-weight: bold;
+    font-family: 'din'
+}
+
+.text4{
+    display: block;
+    text-align: center;
+    position: relative;
+    top:100px;
+    font-family: 'din'
+}
+
+.text5{
+    display: block;
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+    top:100px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.text6{
+    display: block;
+    text-align: center;
+    position: relative;
+    top:100px;
+    color: #fff;
+}
+
+.text7{
+    display: block;
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+    top:100px;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'din'
+}
+
+.text8{
+    display: block;
+    text-align: center;
+    position: relative;
+    top:100px;
+    color: #fff;
+}
+
+.text9{
+    display: block;
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+    top:100px;
+    font-weight: bold;
+    color: #000;
+    font-family: 'din'
+}
+
+.text10{
+    display: block;
+    text-align: center;
+    position: relative;
+    top:100px;
+    color: #000;
+    font-size: 13px;
+    font-family: 'din'
+}
+
+.text11{
+    display: block;
+    text-align: center;
+    position: relative;
+    top:100px;
+    font-weight: bold;
+    color: #000;
+}
+
+.text12{
+    display: block;
+    text-align: center;
+    font-size: 35px;
+    position: relative;
+    font-weight: bold;
+    top:100px;
+    color: #fff;
+    font-family: 'din'
+}
+
+.text13{
+    display: block;
+    text-align: center;
+    position: relative;
+    top:100px;
+    color: #fff;
+}
+
+.text14{
+    display: block;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top:100px;
+    color: #fff;
+}
+
+.text15{
+    display: block;
+    text-align: center;
+    position: relative;
+    top:100px;
+    color: #fff;
+    font-family: 'din'
+}
+
+.text16{
+    display: block;
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+    top:100px;
+    color: #000;
+}
+
+.text17{
+    display: block;
+    text-align: center;
+    position: relative;
+    top:100px;
+    color: #000;
+}
+
+/*img 변환*/
+
+
+@media only screen and (max-width:1023px){
+    
+    .section.sec1{
+        background-image: url(../img/main01.jpg);
+        background-repeat: no-repeat;
+        background-size: 600px;
+        background-position: 50%;
+        
+    }
+    
+    .section.sec2{
+        background-image: url(../img/main02.jpg);
+        background-repeat: no-repeat;
+/*        background-size: 600px;*/
+        background-position: 50% 80;
+    }
+    
+
+    
+    .section.sec3{
+        width: 98%;
+        
+    }
+    .section.sec3 ul li{
+        width: 100%;
+        height: 500px;
+    }
+}
+
+
+@media only screen and (max-width:763px){
+    .gnb>ul>li.m1{
+        width: 100%;
+    }
+    
+    .gnb>ul>li.m2{
+        width: 100%;
+        display: none;
+        
+    }
+    
+    
+    .gnb>ul>li.m10{
+        position: absolute;
+        right: 20px;
+        top: 0;
+    }
+    
+    .section.sec1{
+        background-image: url(../img/main0101.jpg);
+        background-repeat: no-repeat;
+        background-size: 200px;
+        background-position: 50% 80%;
+        
+    }
+    
+    .section.sec2{
+        background-image: url(../img/main0202.jpg);
+        background-repeat: no-repeat;
+/*        background-size: 600px;*/
+        background-position: 50% 100%;
+    }
+    
+    .section.sec3>ul>li.gleft.s03{
+        background-image: url(../img/s0303.jpg);
+        background-repeat: no-repeat;
+/*        background-size: 600px;*/
+        background-position: 50% 100%;
+    }
+    
+
+    
+    .section.sec3{
+        width: 98%;
+        
+    }
+    .section.sec3 ul li{
+        width: 100%;
+        height: 500px;
+    }
+}
+
+.
+
+/*footer 시작*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

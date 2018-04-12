@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FadeEffect</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/FadeEffect.css">
+</head>
+<body>
+    <div id="wrap">
+        <div class="nav">
+            <ul>
+                <li>gallery1</li>
+                <li>gallery2</li>
+                <li>gallery3</li>
+                <li>gallery4</li>
+                <li>gallery5</li>
+                <li>gallery6</li>
+            </ul>
+            <span class="arrow arrowleft"></span>
+            <span class="arrow arrowright"></span>
+            <div class="items">
+                <ul>
+                    <li class="on"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+    
+        var navLi=$('.nav>ul>li');
+        var navLiLength=$('.nav>ul>li').length;
+        var itemsLi=$('.items>ul>li')
+        navLi.eq(0).fadeIn(0).siblings().fadeOut(0);
+        var spanArrow=$('span.arrow')
+        
+        
+        var idx=0;
+    
+        function fadeAutoGallery(e){
+            
+            idx++;
+            
+            navLi.eq(idx).fadeIn().siblings().fadeOut(400);
+            console.log(idx);
+            itemsLi.eq(idx).addClass('on').siblings().removeClass('on');
+            
+            if(idx>navLiLength-2)
+                idx=-1;
+        }
+        
+        var setIn=setInterval(fadeAutoGallery,2000);
+        
+        
+        itemsLi.hover(
+         function(e){
+             
+             clearInterval(setIn);
+             
+         },function(e){
+             
+             setIn=setInterval(fadeAutoGallery,2000);
+             
+         }
+        );
+        
+        
+        itemsLi.on('click',function(e){
+            
+            var key=$(this).index();
+            
+            navLi.eq(key).fadeIn().siblings().fadeOut(100);
+            
+            itemsLi.eq(key).addClass('on').siblings().removeClass('on');
+            
+            if(key==navLiLength-1){
+                    idx=-1;
+            }else{
+                idx=key;
+            }
+            
+          
+        });
+        
+        
+        
+        
+        spanArrow.hover(
+         function(e){
+             
+             clearInterval(setIn);
+             
+         },function(e){
+             
+             setInterval(fadeAutoGallery,2000);
+             
+         }
+        );
+        
+    </script>
+    
+    
+    
+</body>
+</html>

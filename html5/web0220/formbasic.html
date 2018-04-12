@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+   <form action="joinok.php" method="POST">
+      
+      <!-- 반드시 라벨태그를 써서 써야함 아니면 벌금 -->
+      <label for="userid">아이디:</label> <input type="text" name="userid" id="userid" placeholder="아이디입력">
+      <input type="button" onclick="javascript:alert('아이디찾기');" value="아이디찾기"><br>
+      <label for="userpw">비밀번호:</label><input type="password" name="userpw" id="" placeholder="비밀번호입력"><br>
+      <label for="username">이름</label><input type="text" name="username" id="" placeholder="이름입력"><br>
+       <label for="usergender">성별</label>
+       <input type="radio" name="usergender" id="" value="man" checked>남자
+       <input type="radio" name="usergender" id="" value="women">여자
+       <br>
+       <label for="userhobbys">취미</label>
+       <input type="checkbox" name="userhobbys[]" id="등산" value="등산" checked>등산
+       <input type="checkbox" name="userhobbys[]" id="등산" value="음악청취">음악청취
+       <input type="checkbox" name="userhobbys[]" id="등산" value="영화감상">영화감상
+       <input type="checkbox" name="userhobbys[]" id="등산" value="운동">운동
+       <input type="checkbox" name="userhobbys[]" id="등산" value="떠들기">떠들기<br>
+       
+       
+       전화번호
+       
+       <select name="phone1" id="">
+           <option value="010" selected>010</option>
+           <option value="011">011</option>
+           <option value="017">017</option>
+           <option value="070">070</option>
+       </select>-
+       <input type="text" name="phone2" maxlength="4" size="6" id="" placeholder="숫자 4자리">-
+       <input type="text" name="phone3" maxlength="4" size="6" id="" placeholder="숫자 4자리">
+       
+       <br>
+       
+       <label for="memo">자기소개서</label><br>
+       <textarea name="memo" id="" cols="30" rows="10" placeholder="자기소개서"></textarea><br>
+       
+       
+       
+       <input type="submit" value="회원가입">
+   </form>
+   
+    
+</body>
+</html>

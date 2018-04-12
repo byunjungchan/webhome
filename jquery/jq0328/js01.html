@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/js01.css">
+</head>
+<body>
+   <div id="wrap">
+       <div class="nav">
+           <div class="gallery">
+               <ul>
+                   <li>111111</li>
+                   <li>222222</li>
+                   <li>333333</li>
+                   <li>444444</li>
+                   <li>111111</li>
+               </ul>
+               <div class="items">
+                   <ul>
+                       <li></li>
+                       <li></li>
+                       <li class="on"></li>
+                       <li></li>
+                       <li></li>
+                   </ul>
+               </div>
+           </div>
+           <span class="arrow arrowLeft"></span>
+           <span class="arrow arrowRight"></span>
+       </div>
+       <script>
+           
+           var nav=$('.nav');
+           var gallery=$('.gallery');
+           var galleryUl=$('.gallery>ul');
+           var galleryUlLi=$('.gallery>ul>li');
+           var items=$('.items');
+           var itemsUlLi=$('.items>ul>li');
+           var arrowLeft=$('span.arrowLeft');
+           var arrowRight=$('span.arrowLeft');
+           
+           var galleryUlLeft=
+               galleryUlLi.eq(1).offset().left-galleryUlLi.eq(0).offset().left;
+           
+           var galleryUlLiLength=galleryUlLi.length;
+           
+           console.log(galleryUlLeft);
+           
+           var key=2;
+           
+           function autoGallery(e){
+               key++;
+               console.log(key+" *********")
+               galleryUl.animate({left:-galleryUlLeft*key});
+               
+               itemsUlLi.eq(key).addClass('on').siblings().removeClass('on');
+               
+               if(key>galleryUlLiLength-3){
+                   key=0;
+                   galleryUl.delay(2000).animate({left:-galleryUlLeft*key},0);
+               }
+                   
+               
+               console.log(galleryUl.css('left'));
+               console.log(galleryUlLiLength);
+               console.log(key);
+           }
+           
+           
+           
+           $('.arrow, .items>ul>li').hover(//두개 해도됨
+               function(){
+                   clearInterval(setInt);
+               },
+               function(){
+                   setInt=setInterval(autoGallery,3000);
+               }
+           );
+
+           var setInt=setInterval(autoGallery,3000);
+           
+           
+           itemsUlLi.on('click',function(e){
+               $(this).addClass('on').siblings().removeClass('on');
+           })
+           
+           
+           
+           
+           
+           //요런 방법도 있다.
+//           function appendAnimate(e){
+//               $('.gallery>ul>li').dalay(100).animate({left:'-100%'},1000,function(){
+//                   $('.gallery>ul').append($('.gallery>ul>li').eq(0));
+//               });
+//           }
+//           
+//           var setInt=setInterval(appendAnimate,3000);
+
+
+
+
+       </script>
+   </div>
+    
+</body>
+</html>

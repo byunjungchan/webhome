@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자바스크립트</title>
+    <script>
+    
+        window.onload=function(){
+            
+            
+        }
+    
+    </script>
+    
+</head>
+<body>
+  <button id="btn1">2~9단</button>
+  
+    <button class="btn2">9~2단</button>
+   
+   <div class="box">
+       
+       
+   </div>
+   
+   
+    <script>
+        
+        var box=document.getElementsByClassName('box')[0];
+        box.style.border="1px solid";
+        box.style.width="108px";
+        
+        document.querySelector('#btn1').style.background="#fff"; //id
+        document.querySelectorAll('.btn2')[0].style.background="#fff"; //객체(태그)가 여러개일때
+        
+        var btn1id=document.getElementById('btn1');
+        var btn2class=document.getElementsByClassName('btn2')[0];
+    
+        
+        btn1id.addEventListener('click',btn1fun);//마우스를 눌렀을 때
+        btn2class.addEventListener('mousedown',btn2fun);//마우스 눌렀다 '땟'을때
+        
+        function btn1fun(){
+            
+             //        2~9단
+             for(var i=2;i<10;i++){
+            
+//            console.log(i+"단입니다.")
+            box.innerHTML+=i+"단입니다.<br><br>";
+            for(var j=1;j<10;j++){
+                
+                box.innerHTML+=i+"X"+j+"="+(i*j)+"<br><br>";
+                
+            }
+        }
+        }
+        
+        box.innerHTML+="=========<br>";
+        
+        
+        function btn2fun(){
+            
+            
+            //        9~2단
+            for(var i=9;i>1;i--){
+            
+//            console.log(i+"단입니다.")
+            box.innerHTML+=i+"단입니다.<br><br>";
+            for(var j=1;j<10;j++){
+                
+                box.innerHTML+=i+"X"+j+"="+(i*j)+"<br><br>";
+                
+            }
+        }  
+        }
+        
+        
+        
+
+    </script>
+   
+    
+</body>
+</html>

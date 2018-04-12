@@ -1,0 +1,26 @@
+@charset "utf-8";
+.nav{
+    width: 1000px;
+    height:auto;
+    border:1px solid #f00;
+    margin:0 auto;
+    overflow:hidden;
+}
+.nav>ul>li{
+    width:20%;
+    height:100px;
+    border:1px solid;
+    float:left;
+    box-sizing:border-box;
+/*     padding-top:20px;
+    padding-bottom:20px;
+    padding-left:10px;
+    padding-right:10px; */
+    padding:20px 10px;
+    background:#eaeaea;
+
+}
+.nav>ul>li>img{
+    width:180px;
+    height:auto;
+}

@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+#wrap{
+    width:100%;
+    height:auto;
+    border:1px solid #f00;
+    margin:0 auto;
+    background:#fff799;
+
+}
+
+.header{
+    width:100%;
+    height:100px;
+    margin:0 auto;
+    border:1px solid #ff0;
+    background:#80c269;
+}
+
+.nav{
+    width:1000px;
+    height:500px;
+    margin:0 auto;
+    border:1px solid #f00;
+    position:relative;
+    background:url(../img/bg01.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:50%;
+
+}
+
+.section{
+    width:1000px;
+    height:200px;
+    border:1px dotted #00f;
+    margin:0 auto;
+    background:#cfa972
+}
+
+.article{
+    width:1000px;
+    height:100px;
+    border:1px dashed #f0f;
+    margin:0 auto;
+    background:#7ecef4;
+}
+
+.footer{
+    width:100%;
+    height:100px;
+    background:#555;
+}
+
+/* header 시작 */
+
+/* nav 시작 */
+
+.nav .arrow{
+    width:50px;
+    height:100px;
+    background:#f00;
+    position:absolute;
+    top:200px;
+}
+
+
+.nav .arrow.left_arrow{
+    background:url(../img/left_arrow.png) no-repeat 50%;
+    left:0;
+}
+
+.nav .arrow.right_arrow{
+    background:url(../img/right_arrow.png) no-repeat 50%;
+    right:0;
+}
+
+
+/* section 시작 */
+
+/* article 시작 */
+
+/* footer 시작 */

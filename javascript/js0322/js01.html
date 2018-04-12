@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자바스</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .hot{
+            
+            
+        }
+        .cool{
+            
+            font-size: 20px;
+            color: aqua;
+            background: #f00;
+        }
+        .add1{
+            
+            background: #000;
+            color: #fff;
+        }
+        
+        .add2{
+            
+            background: #00f;
+            color: aqua;
+        }
+    
+    
+    
+    </style>
+</head>
+<body>
+   <div id="page">
+       <h1 id="header">목록</h1>
+       <h2>h2요소 node</h2>
+       <ul id="ulId">
+           <li id="one" class="hot"><em>신선한</em>무화과</li>
+           <li id="two" class="hot">잣</li>
+           <li id="three" class="hot">꿀</li>
+           <li id="four">발사믹 식초</li>
+       </ul>
+       <script src="js/list.js"></script>
+   </div>
+   
+    <script>
+    
+    var page=document.getElementById('page');
+        
+        page.style.width="400px";
+        page.style.height="auto";
+        page.style.border="1px solid";
+        page.style.margin="0 auto";
+        
+        
+        var headerId=document.getElementById('header');
+        
+        headerId.textContent;//get
+        headerId.textContent="soyo";//set
+         
+        
+        
+        
+        ///딸기 만들어서 넣기
+        var oneId=document.getElementById('one');
+        
+        var newLi=document.createElement('li');//딸기
+        var strawberry=document.createTextNode('딸기');
+        
+        newLi.appendChild(strawberry);
+        
+        console.log(newLi);
+        
+        
+        var ulId=document.getElementById('ulId');
+        
+        ulId.appendChild(newli);
+        
+        
+        
+//        var oneId=document.getElementById('one');
+//        var oneQuery=document.querySelector('#one');
+//        var hotClass1=document.getElementsByClassName('hot');
+//        var hotClass=document.querySelectorAll('li.hot');
+        
+        
+//        //선택자 앞 형제
+//        console.log(hotClass[1].previousSibling);
+//        console.log(hotClass[1].previousElementSibling);
+//        hotClass1[1].previousElementSibling.style.background="#f00";
+//        
+//        hotClass1[1].previousElementSibling.className="add1";
+//        
+//        
+//        //선택자 뒤 형제
+//        console.log(hotClass1[1].nextSibling);
+//        console.log(hotClass1[1].nextElementSibling);
+//        hotClass1[1].nextElementSibling.style.background="#ff0";
+//        hotClass1[1].previousElementSibling.className="add2";
+//        
+//        //선택자 자식의 첫번째, 마지막번째 요소
+//        
+//        var ulTag=document.getElementsByTagName('ul')[0];
+//        
+//        console.log(ulTag);
+//        console.log(ulTag.firstChild);
+//        console.log(ulTag.lastChild);
+//        console.log(ulTag.firstElementChild);
+//        
+//        ulTag.firstElementChild.style.height="50px";
+//        ulTag.lastElementChild.style.height="100px";
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+//        document.querySelector('#header');
+//        var headerId=document.getElementById('header');
+//        
+//        console.log(headerId.parentNode);
+//        console.log(headerId.parentElement);
+//        console.log(headerId.parentNode.parentNode);
+//        console.log(headerId.parentNode.childNodes);
+
+        
+        
+        
+        
+        
+//        var idone=document.getElementById('one');
+//        idone.style.color="#f00";
+//        
+//        var h1Tag=document.getElementsByTagName('h1');
+//        var h2Tag=document.getElementsByTagName('h2');
+//        
+//        h1Tag[0].style.width="100%";
+//        h1Tag[0].style.height="200px";
+//        h1Tag[0].style.textAlign="center";
+//        h1Tag[0].style.background="#ff0";
+//        h1Tag[0].style.lineHeight="200px";
+//        
+//        h2Tag[0].style.width="100%";
+//        h2Tag[0].style.height="100px";
+//        h2Tag[0].style.textAlign="center";
+//        h2Tag[0].style.background="#0f0";
+//        h2Tag[0].style.lineHeight="100px";
+//        
+//        
+//        //////
+//        
+//        var hotClass=document.getElementsByClassName('hot');
+//        var secHot=document.querySelectorAll('.hot');
+//        
+//        hotClass[0].style.color="#00f";
+//        hotClass[1].style.color="#00f";
+//        hotClass[2].style.color="#00f";
+//        console.log("클래스 hotClass 총갯수: "+hotClass.length);
+//        
+        
+
+        
+        
+//        var hotClassArr=['#f00','#ff0','#00f'];
+//        
+//        
+//        
+//        for(var i=0;i<hotClass.length;i++){
+//            hotClass[i].style.color=hotClassArr[i];
+//            hotClass[i].style.fontSize="12px";
+//            
+//        }
+//        
+//        var hotItime=document.querySelectorAll('li.hot');
+//        
+//        if(hotItime.length>0){
+//            for(var i=0;i<hotItime.length;i++){
+//                hotItime[i].className='cool'; //클래스 변
+//            }
+//            
+//        }
+//        
+//        
+//        
+//        
+//        secHot[0].style.color="#f0f";
+//        console.log("클래스 secHot 총갯수: "+secHot.length);
+    
+    
+    
+    
+    
+    </script>
+   
+   
+</body>
+</html>

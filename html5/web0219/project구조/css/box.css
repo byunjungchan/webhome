@@ -1,0 +1,57 @@
+@charset "utf-8";
+#wrap{
+    width: 100%;
+    height: auto;
+}
+.box{
+    width: 750px;
+    height: auto;
+    border: 1px solid #ff0000;
+    padding: 0px;
+    background-color: #ffff00;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.box>ul>li{
+    width: 125px;
+    height: 70px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 68px;
+}
+.box>ul>li:hover{
+    color: #ffffff;
+}
+.box>ul>li>a{
+    /*display: block;*/
+}
+.box>ul>li>a:hover{
+    color: #555555;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

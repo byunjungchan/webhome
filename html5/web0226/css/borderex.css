@@ -1,0 +1,40 @@
+@charset "utf-8";
+.box{
+    width: 300px;
+    height: 300px;
+    background: #ff0 url(../img/bg01.jpg) no-repeat 50%;
+    background-size: cover;
+    margin: 0 auto;
+    line-height: 300px;
+    text-align: center;
+    font-size: 50px;
+    cursor: pointer;
+    border-radius: 50px 20px 100px 50%;
+    text-shadow: 2px 2px 2px #f0f;
+    box-shadow: 10px 10px #000;
+    transition:all 2s;
+    
+    -ms-transition:all 2s;
+    -webkit-transition:all 2s;
+    -moz-transition:all 2s;
+}
+
+.box:hover{
+    border-radius: 50%;
+    background: #fd58fe url(../img/bg02.jpg) no-repeat 50%;
+    background-size: cover;
+    color: #ef5989;
+    text-shadow: 5px 5px 3px #ccc;
+    box-shadow: 100px 10px 100px #000;
+    
+ }
+.box:active{
+    border-radius: 10%;
+    background: #ffeeee url(../img/bg03.jpg) no-repeat 50%;
+    background-size: cover;
+    color: #ef5989;
+    text-shadow: 1px 1px 1px #ccc;
+    box-shadow: 1px 1px 5px #000;
+    
+ }
+

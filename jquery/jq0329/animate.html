@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>스크롤 애니메이션</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+   <div id="wrap">
+       <section>section1<br>
+           <div class="line"></div>
+       </section>
+       <section>section2<br>
+           <div class="line"></div></section>
+       <section>section3<br>
+           <div class="line"></div></section>
+       <section>section4<br>
+           <div class="line"></div></section>
+       <section>section5<br>
+           <div class="line"></div></section>
+       
+       <div class="items">
+           <ul>
+               <li class="on"></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+           </ul>
+       </div>
+   </div>
+    
+    
+    <script>
+        var items=$('.items');
+        var itemLi=$('.items>ul>li');
+        
+        itemLi.on('click',function(e){
+            
+            $(this).addClass('on').siblings().removeClass('on');
+            
+            var idx=$(this).index();
+            var secTop=$('section').eq(idx).offset().top;
+            
+            console.log(secTop);
+            $('html,body').animate({scrollTop:secTop},400,function(e){
+                
+                $('section').eq(idx).siblings().find('.line').animate({'width':'0'});
+                $('section').eq(idx).find('.line').animate({'width':'400px'});
+                
+                console.log("콜백함수")// 선이 생기는거
+                
+            });
+            
+            var top=$(window).scrollTop();
+            console.log(top);
+            
+        });
+        
+        
+//        $(window).scroll(function(e){
+//                var top=$(window).scrollTop();
+//                
+//                if(top>=1000){
+//                    $('.line').animate({width:'400px'})
+//                }else{
+//                    $('.line').animate({width:'0'})
+//                }
+//            })
+//    
+
+    
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>

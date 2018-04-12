@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+#wrap{
+    width: 100%;
+    height: auto;
+}
+
+section{
+    width: 100%;
+    height: auto;
+}
+
+/*header 시작*/
+
+.header{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 200px;
+}
+
+.header .h1_txt{
+    position: relative;
+    top: 30px;
+}
+
+/*sectionPart1 시작*/
+
+.sectionPart1{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    top: 430px;
+}
+
+section .sectionPart1>ul>li.one{
+    width: 500px;
+    height: 300px;
+    border: 1px solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

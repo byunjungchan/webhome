@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>json</title>
+</head>
+<body>
+    <script>
+        
+        var jsonArr={
+            "members":{
+                "userId":['soyo','0823','soyo0823'],
+                "userPw":[1111,2222,3333],
+                "userAge":[10,20,30]
+            }
+            //배열안의 배열
+        }
+        
+        
+        var arrJson={
+            
+            "members":[
+                {"userId":'soyo',"userPw":'1111'},
+                {"userId":'0823',"userPw":'2222'},
+                {"userId":'soyo0823',"userPw":'3333'}
+                
+            ]
+        };
+        
+        var num=0;
+        for(idx in arrJson.members){
+            
+            console.log(idx.userId]);
+            num++;
+            
+        }
+        
+        console.log("==========================");
+        
+        for(var i=0;i<arrJson.members;i++){
+            
+            console.log(arrJson.members[i]);
+            console.log(arrJson.members[i]['userId']);
+            console.log(arrJson.members[i]['userPw']);
+            
+        }
+        
+        console.log("==========================");
+        
+        console.log(arrJson.members[0]);
+        console.log(arrJson.members[0]['userId']);
+        console.log(arrJson.members[0]['userPw']);
+        
+        console.log(arrJson.members[1]);
+        console.log(arrJson.members[1]['userId']);
+        console.log(arrJson.members[1]['userPw']);
+        
+        console.log(arrJson.members[2]);
+        console.log(arrJson.members[2]['userId']);
+        console.log(arrJson.members[2]['userPw']);
+        
+        
+    
+    </script>
+</body>
+</html>

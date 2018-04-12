@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AppendGallery</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/cafe.css">
+</head>
+<body>
+    <div id="bannergallery">
+        <div class="maingallery">
+            <ul>
+                <li class="list">gallery0</li>
+                <li class="list">gallery1</li>
+                <li class="list">gallery2</li>
+                <li class="list">gallery3</li>
+                <li class="list">gallery4</li>
+            </ul>
+        </div>
+        <span class="arrow arrowleft"></span>
+        <span class="arrow arrowright"></span>
+    </div>
+    <script>
+    
+        var bannergallery=document.getElementById('bannergallery');
+        var maingallery=document.getElementsByClassName('maingallery')[0];
+        var ultag=document.getElementsByTagName('ul')[0];
+        var arrowleft=document.getElementsByClassName('.arrowleft')[0];
+        var arrowright=document.getElementsByClassName('.arrowright')[0];
+        
+        
+        var ulfirst=ultag.firstElementChild;
+        var ullast=ultag.lastElementChild;
+        
+        var list=document.getElementsByClassName('list');
+        
+        for(var i=0;i<list.length;i++){
+            list[i].style.background="url(img/bg)"+i+".jpg) no-repeat 50%";
+            list[i].style.backgroundSize="cover";
+            
+        }
+        
+        arrowleft.addEventListener('click',appendChildFun);
+        
+        function appendChildFun(){
+        
+//            ultag.appendChild(ulfirst);
+            ultag.appendChild(list[0]);//이게 맞는거같다. 위에보다.
+            
+            console.log(list[0]);
+        }
+        
+        arrowright.addEventListener('click',inserBeforeFun);
+        
+        function inserBeforeFun(){
+            
+            ultag.insertBefore(list[4],ultag.firstElementChild);
+            
+        }
+        
+        setInterval(appendChildFun,3000);
+        
+        
+        arrowleft.addEventListener('mouseover', galleryStop);
+        arrowright.addEventListener('mouseover', galleryStop);
+        
+        function galleryStop(){
+            
+            clearInterval(setint);
+            
+        }
+        
+        function galleryRestart(){
+            
+            setInt=setInterval(appendChildFun, 3000);
+        }
+    
+    
+    
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+    
+    
+    
+    </script>
+    
+    
+    
+    
+    
+    
+</body>
+</html>

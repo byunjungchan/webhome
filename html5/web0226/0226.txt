@@ -1,0 +1,265 @@
+1.web
+웹의 원래 의미는 거미집으로 하나의 사이트나 또는 다른 사이트와의 관계가 거미집처럼 복잡하게 얽혀 있기 때문에 웹이라고 부른다.
+
+
+2. html
+html로 구조를 잡는다.
+웹 문서를 만들기 위하여 사용하는 기본적인 프로그래밍 언어의 한 종류이다. 하이퍼텍스트를 작성하기 위해 개발되었다.
+
+
+
+3. css
+html로 구조를 잡고, css로 디자인을 하기 때문에 웹을 설계할 수 있고, 글자의 크기, 글자체, 줄간격, 배경 색상, 배열위치 등을 자유롭게 선택하거나 변경할 수 있으며 유지·보수도 간편하게 할 수 있다.
+
+
+
+4. block태그의 특징
+
+
+자동 줄바꾸기
+withd, height 설정 할 수 있다.
+width를 설정하지 않으면 100% 부모의
+
+
+5. margin과 padding의 차이점
+
+margin은 "나와 부모 또는 다른 태그와의 간격을 말한다.
+         (자신을 기준으로 밀어버림)
+
+padding은 나와 내 자식 태그, 컨텐츠와의 여백
+
+
+=========================================
+
+
+1. 서술형 평가
+
+
+2. 실기형 평가
+
+
+
+
+
+==position css3 video, audio, animation
+==반응형
+
+
+================ position =================
+	"태그를 원하는 위치에 재배치"
+
+block태그
+
+**z-index: 기본이 0 숫자가 크면 위에 배치
+
+left,top,right,bottom = position 설정이 되어 있어야 움직인다
+
+1. absolute "부모태그가 position설정이 되어 있으면 
+             부모의 기준좌표 중심으로 재배치"
+
+	     "부모태그가 positon미설정시 브라우저 기준좌표
+	      중심으로 재배치"
+
+2. relative "나를 중심으로 재배치" 현재의 자기 위치에서 재배치
+	    "갤러리구조에 부모" margin:0 auto; 설정 가능
+
+
+
+
+3. fixed "고정형/기존배치 무시하고 브라우저 기준좌표로 재배치 값을 설정안하면(left,top,right,bottom)기본 포지션과 같다.
+
+"애플 상단바 고정같은 능력"
+
+
+4. static(기본형) "기본 포지션 아무런 값도 안줌(자동으로 줄바꿈되는 블럭태그의 성질)
+
+
+rel는 경로의 성격을 나타냄
+
+
+
+
+==== 실습1 absolute
+
+.parent 800*600 border: 1px solid #ff0; 가로가운데
+
+ .box 200*200 border: 1px soild #000;
+  box.box1 빨강
+  box.box2 노랑
+  box.box3 파랑
+
+
+==== 실습2 아이리버
+
+.nav 1000*500 가로가운데 배경이미지설정 position:relative
+ .arrow 50*100 absolute 배경이미지(화살표)
+ .
+
+
+==== 내일 시험!
+
+#wrap 100% auto
+.header 100%*100 가로가운데
+.nav 1000**500 가로가운데
+
+ -margin: 0auto 배경이미지 설정하고 position:relative 준다
+ .arrow 50*100 absolute 배경경이미지 *화살표 가로가운데
+
+.section 1000*200 가로가운데
+.article 1000*100 가로가운데
+
+.footer 100%*100
+
+==== 시맨틱 (semantic) 의미
+html5에서 태그만 봐도 어떤건지 알게 해주는 
+
+#wrap
+
+.header
+.nav
+
+header
+section
+nav
+article
+footer
+aside
+address
+
+
+
+실습3
+
+#wrap 600*auto 가로가운데
+
+ header 100%*100 배경색(임의로)
+ nav 100%*100 배경색(임의로)
+ section.content 100%*500 relative
+  section.top 400*200 absolute
+  article.top 400*200 absolute
+
+ aside 200*400 absolute
+
+footer 100%*100
+
+
+==
+
+border 위 오른 아래 왼쪽 style: solid, dashed, dotted
+
+
+
+border-left-style
+
+border-top-style
+
+border-right-style
+
+border-bottom-style
+
+border-radius
+
+
+:hover // 마우스를 over했을때 효과 -> 마우스를 out 했을때는 원래 css
+
+text-shadow : x y 펴짐 색상  "텍스트의 그림자효과"
+
+box-shadow : x y 퍼짐 색상 // box 그림자
+
+
+:ative "눌렀을때"
+:hover "올렸을때"
+transition 속성시간; "액션을 적용한 후에" >> 속성을 시간동안 적용"
+"원래 기본 태그에 속성을 적용"
+
+all > 모든속성
+
+"배경 색상이 
+
+
+css3 >>> 각 브라우저 마다. "벤더 프리픽스"
+
+transition 각 브라우저 마다, 아직 transition속성이 제대로 적용이 안됨
+그래서 아래와 같이 붙여줌 이런걸 벤더 프리픽스
+
+-moz- 파이어폭스
+-ms- 익스플로어
+-webkit- 크롬, 사파리
+
+-moz-transition // 파이어폭스
+-ms-transition // 익스플로어
+-webkit-transition // 크롬, 사파리
+transition // 기본
+
+그라디언트 밴더프리픽스
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

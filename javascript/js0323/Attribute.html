@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attribute</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .one{
+            background: #f00;
+            width: 300px;
+            height: 200px;
+            border: 10px solid;
+        }
+        .two{
+            background: #00f;
+            width: 200px;
+            height: 500px;
+            border: 10px solid #ccc;
+        }
+    
+    
+    
+    
+    </style>
+    
+</head>
+<body>
+   
+   <div id="parent">
+       <div class="gnb">
+           <ul>
+               <li class="list">menu0</li>
+               <li class="list"><a id="atag" href="next.html">next</a></li>
+               <li class="list">menu2</li>
+               <li class="list"><img src="img/bg0.jpg" alt="대체문구"></li>
+               <li class="list">menu4</li>
+           </ul>
+       </div>
+   </div>
+   
+    <script>
+    
+        var atag=document.getElementById('atag');
+        console.log(atag.getAttribute('href'));
+        
+        var src=document.getElementsByTagName('img')[0].getAttribute('src');
+        console.log(src);
+        
+        
+        document.getElementsByClassName('gnb')[0].setAttribute('class','one');
+        
+        
+//        document.getElementsByTagName('a')[0];
+        // 태그 속성을 본다.
+        
+//        <a data-brackets-id="115" id="atag" href="next.html">next</a>
+        
+        
+//        document.getElementsByTagName('a')[0].getAttribute('href')
+        //get 으로 a태그의 href가 무엇인지 본다
+        
+//        "next.html"
+        
+        
+//        document.getElementsByTagName('a')[0].setAttribute('href','http://naver.com')
+        //set으로 바꿀 부분과 내용을 넣는다.
+        
+//        undefined
+        
+        
+//        document.getElementsByTagName('a')[0].getAttribute('href')
+        //get으로 바꿧는지 확인한다.
+
+//        "http://naver.com"
+        
+    </script>
+   
+    
+</body>
+</html>

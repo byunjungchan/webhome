@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<body>
+   <form action="joinok.php" method="get">
+   <label for="userid">아이디</label>
+   <input type="text" name="userid" id="" size="10" maxlength="12">
+   <br>
+   <label for="userpw">비밀번호</label>
+   <input type="password" name="userpw" size="10">
+   <br>
+   <label for="usergender">성별</label>
+   <input type="radio" name="usergender" id="man">남자
+   <input type="radio" name="usergender" id="woman">여자
+   <!-- name값이 같아야 한다. -->
+   <br>
+   인터넷<input type="checkbox" name="userhobbys[]" value="인터넷">
+   운동<input type="checkbox" name="userhobbys[]" value="운동">
+   잠자기<input type="checkbox" name="userhobbys[]" value="잠자기">
+   음악청취<input type="checkbox" name="userhobbys[]" value="음악청취">
+   노래부르기<input type="checkbox" name="userhobbys[]" value="노래부르기">
+   <!-- 아이디 대신 value값을 쓴다 -->
+   <br>
+   <label for="휴대전화">휴대전화</label>
+   <br>
+   <span><label for="+82">+82</label></span>
+   <select name="phone1" id="">
+       <option value="010" checked>010</option>
+       <option value="011">011</option>
+       <option value="070">070</option>   
+   </select>
+      <label for="">-</label>
+       <input type="text" name="phone2" id="" size="10">
+       <label for="">-</label>
+       <input type="text" name="phone3" id="" size="10">
+   <br>
+   <input type="submit" value="회원가입">
+   </form>
+</body>
+</html>

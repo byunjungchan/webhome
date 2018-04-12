@@ -1,0 +1,162 @@
+css 선택자 이해
+
+2.video, audio 태그
+
+3. 계정 만들기(무료계정)
+
+
+
+==== 실습01
+
+
+animation, transform, translate 이용해서 구현
+
+#wrap 100% auto
+
+  .gallery 1000*auto 가로가운데 relative
+
+   ul 5000*auto
+
+    ul>li*5 1000*500 배경이미지
+
+  span.arrow*2 50*140 absolute
+
+ span.arrow 인라인은 값을 안먹는데, display:block으로 바꿔준다.
+ span.arrow.left_arrow  left
+ span.arrow.right_arrow  right
+
+가운데, 부모크기/2-자기크기/2
+
+** ul이 왼쪽으로 1초마다 500px 이동 >> 자동으로 이동
+
+ul >> 에게 준다.
+
+animation-name:autogallery ;
+
+animation-duration:10s;
+
+animation-dalay:2s;
+
+animation-iteration-count:infinite
+
+@keyframes autogallery{
+
+	0%{tranform:translate(0,0)}
+	20%{tranform:translate(-1000,0)}
+	40%{tranform:translate(-2000,0)}
+	60%{tranform:translate(-3000,0)}
+	80%{tranform:translate(-4000,0)}
+	100%{tranform:translate(-4000,0)}
+
+}
+
+li 배경이미지 설정
+
+클래스
+
+linth-child
+
+
+====
+
+
+video, audio 태그
+
+플러그인 >> 브라우저 기본기능 이외의 보조 프로그램
+
+동영상 변환 >> 프리미어, 에펙, 무료동영상변환
+
+url뒤에
+
+?autoplay=1&amp;controls=0 자동 재생, 재생바 없애기
+
+
+
+====실습02
+
+#wrap 100%*100%
+
+.hmenu 200*50 fixed
+.gnb   30*180 fixed
+.section*6 100%*100%
+
+
+absolute일때 auto로 하면 자동으로 크기가 맞는다.
+
+hover:
+
+1. 마우스 오버했을때 스타일 display:block
+2. 마우스 아웃하면 원래 스타일 display:none
+
+
+
+=====반응형 웹 디자인
+
+미디어 쿼리
+
+=자바스크립트 이론 과제=
+
+자바스크립트란? 개념정리
+
+변수
+
+자료형과 자료형 종류
+
+연산자
+
+ 단향연산잔 	증감
+
+ 이항연산자 	산술, 대입, 복합대입, 비교 , 논리, 비트
+
+ 삼항연산자 	삼항연산자
+
+
+3. 계정만들기
+
+cafe24.com < php 안됨
+
+dothome.co.kr < php, mysql
+
+
+ftp		포트21 파일전송 응용
+
+알ftp, 알드라이브, 파일질라
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

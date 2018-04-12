@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>json</title>
+</head>
+<body>
+    <div id="jsonTxt"></div>
+    <script>
+//        var myObj={
+//            "name":"john",
+//            "age":31,
+//            "city":"new york"
+//        }
+//        
+//        console.log(myObj.name);
+//        console.log(myObj.age);
+//        console.log(myObj.city);
+//        
+//        //json객체를 문자열
+//        var myJSON=JSON.stringify(myObj);
+//        console.log(myJSON);
+//        console.log(typeof myJSON);
+        
+//        window.location="demo_json.php?x="+myJSON;
+        
+        
+        var myJSON = '{ "name":"John", "age":31, "city":"New York" }';
+            console.log(typeof myJSON);
+        var myObj = JSON.parse(myJSON);
+            console.log(typeof myObj);
+            console.log(myObj.name);
+            console.log(myObj.age);
+            console.log(myObj.city);
+        document.getElementById("demo").innerHTML = myObj.name;
+
+    
+    
+    </script>    
+</body>
+</html>

@@ -1,0 +1,20 @@
+@charset "utf-8";
+.join{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid;
+    box-sizing: border-box;
+    background: #ccc;
+}
+.join>table{
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+table,tr,th,td{
+    border: 1px solid;
+}
+td.title{
+    text-align: center;
+}

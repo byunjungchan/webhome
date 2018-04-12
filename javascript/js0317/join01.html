@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="join">
+    <form action="joinok" method="post" name="joinform" id="joinform">
+        <table>
+            <tr>
+                <tr>
+                    <td colspan="2">
+                        회원가입
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td width="20%"><label for="">이름</label></td>
+                    <td width="80%"><input type="text" name="username" id="username"></td>
+                </tr>
+                <tr>
+                    <td><label for="">주민번호</label></td>
+                    <td><input type="text" name="usernum" id="">-
+                        <input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td><label for="">아이디</label></td>
+                    <td><input type="text" name="userid" id="">@naver.com
+                        <input type="button" value="아이디체크"><br>
+                        <label for="">영문으로 시작하는 4~10자리의 영문, 숫자조합만 가능합니다.</label></td>
+                </tr>
+                <tr>
+                    <td><label for="">별명</label></td>
+                    <td><input type="text" name="nickname" id=""></td>
+                </tr>
+                <tr>
+                    <td><label for="">비밀번호</label></td>
+                    <td><input type="password" name="userpw" id="userpw"><br>
+                        <input type="password" name="userpwcheck" id="userpwcheck">
+                        <span class="txt" style="color: #f00">
+                            
+                        </span></td>
+                </tr>
+                <tr>
+                    <td><label for="">비밀번호 힌트</label></td>
+                    <td>
+                        <select name="userpwhint" id="userpwhint">
+                            <option value="희망" selected>다시태어나면 되고싶은것</option>
+                            <option value="어디">초등학교는 어디?</option>
+                        </select><br>
+                        <input type="text" name="userpwhint" id="userpwhint" placeholder="답변을 입력하세요.">
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">생년월일</label></td>
+                    <td>
+                        <input type="text" name="year" size="4" id="" placeholder="">
+                        <select name="" id="">
+                            <option value="1">1월</option>
+                            <option value="2">2월</option>
+                            <option value="3">3월</option>
+                            <option value="4">4월</option>
+                            <option value="5">5월</option>
+                            <option value="6">6월</option>
+                            <option value="7">7월</option>
+                            <option value="8">8월</option>
+                            <option value="9">9월</option>
+                            <option value="10">10월</option>
+                            <option value="11">11월</option>
+                            <option value="12">12월</option>
+                        </select>
+                        
+                        <select name="" id="">
+                            <option value="1" selected>01</option>
+                            <option value="2">01</option>
+                            <option value="3">02</option>
+                            <option value="4">03</option>
+                            <option value="5">04</option>
+                            <option value="6">05</option>
+                            <option value="7">06</option>
+                            <option value="8">08</option>
+                            <option value="9">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            
+                        </select>
+                        <input type="radio" name="day1" id="day1" value="new">양력
+                        <input type="radio" name="day1" id="day1" value="new">음력
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">핸드폰</label></td>
+                    <td>
+                        <select name="phone" id="">
+                            <option value="010" selected>010</option>
+                            <option value="010">011</option>
+                            <option value="010">013</option>
+                            
+                        </select>
+                        <input type="text" name="userphone" id="userphone">-
+                        <input type="text" name="userphone2" id="userphone2">
+                        <input type="radio" name="phone" id="day2" value="skt">skt
+                        <input type="radio" name="phone" id="day2" value="kt">kt
+                        <input type="radio" name="phone" id="day2" value="lg">lg
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">주로쓰는 메일</label></td>
+                    <td>
+                        <input type="text" name="usermail" id="usermail">
+                        <input type="checkbox" name="mailcheck" id="">네이버 메일 사용
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">거주지</label></td>
+                    <td>
+                        <select name="userhome" id="userhome">
+                            <option value="부산" selected>부산</option>
+                            <option value="서울">서울</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="">메일 수신 여부</label></td>
+                    <td>
+                        <input type="checkbox" name="userhobbys" id="news1">네이버 뉴스레터<br>
+                        <input type="checkbox" name="userhobbys" id="news2">상품정보 메일<br>
+                        <input type="checkbox" name="userhobbys" id="news3">캐쉬정보 메일<br>
+                        <input type="checkbox" name="userhobbys" id="news4">개인정보 메일<br>
+                        <input type="checkbox" name="userhobbys" id="news5">sns 정보 수신<br>
+                        
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="button" value="회원 가입 OK" id="submitbtn">
+                        
+                    </td>
+                </tr>
+  
+        </table>
+        </form>
+    </div>
+</body>
+</html>

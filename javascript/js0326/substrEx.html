@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>substrEx</title>
+</head>
+<body>
+    <script>
+        
+        var query=prompt("query문을 입력하세요.(insert.php, updateDo.php, selectList.php, deleteAction.php)");
+    
+    
+//        query문이 "insert" 회원가입페이지로 이동합니다. (팝업)
+//        query문이 "updateDo" 회원수정페이지로 이동합니다. (팝업)
+//        query문이 "selectList" 회원삭제페이지로 이동합니다. (팝업)
+//        query문이 "deleteAction" 회원조회페이지로 이동합니다. (팝업)
+        
+        //if문이나 switch문 이용해서 실행해보세요.
+        //substr함수를 이용해서 실행해보세요.
+        console.log(query.length);
+        console.log(".php".length);
+        
+        var sql=query.substr(0,query.length-(".php".length)); //마지막 .php만 빼는 공식 
+        console.log(sql);
+        
+        switch(sql){
+                
+            case "insert":
+                alert("회원 가입 페이지로 이동합니다.");
+                break;
+                
+            case "updateDo":
+                alert("회원 수정 페이지로 이동합니다.");
+                break;
+                
+            case "selectList":
+                alert("회원 삭제 페이지로 이동합니다.");
+                break;
+                
+            case "deleteAction":
+                alert("회원 조회 페이지로 이동합니다.");
+                break;
+                
+            default:
+                alert("쿼리문 오류");
+        }
+        
+        
+        
+        
+    
+    </script>
+</body>
+</html>

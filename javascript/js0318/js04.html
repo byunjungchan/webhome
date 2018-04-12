@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자바스크립트</title>
+</head>
+<body>
+    <script>
+        //객체 만드는 두번째 방법
+        
+        //객체 참조 변수("객체의 주소값을 담는 변수)
+        var car=new Object();//new (객체의 주소(새로 생긴))
+        //인스턴스화(객체화)
+        
+            car.carWeight=1000;
+            car.carCoin=2000;
+            car.carName="soyo";
+            car.carYear=2018;
+            car.carMethod=function(){
+                
+                console.log("자동차 무게: "+this.carWeight);
+                console.log("자동차 가격: "+this.carCoin);
+                console.log("자동차 이름: "+this.carName);
+                console.log("자동차 년식: "+this.carYear);
+
+            }
+            
+            console.log(car.carWeight);
+            console.log(car.carCoin);
+            console.log(car.carName);
+            console.log(car.carYear);
+            car.carMethod();
+    
+    
+    
+    
+    </script>
+    
+    
+</body>
+</html>

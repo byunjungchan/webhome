@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript</title>
+    <script>
+        console.log("콘솔에 표시");
+        //document.write("document에 표시");
+        //alert("팝업기능");
+        //console.log(prompt("입력창"));
+        //console.log(confirm("확인창"));
+        
+//        var result=confirm("네이버로 이동하시겠습니까?");
+//        console.log("결과값: "+result);
+//        
+//        if(result){
+//            location.href="http://naver.com";//특정 페이지로 이동
+//        }else{
+//            history.go(-1);//바로 이전 페이지로 한칸 이동]
+//        }
+        
+//        var result=confirm("다음 사이트로 이동 할까요");
+//        
+//        if(result){
+//            alert("다음으로 이동합니다.");
+//            location.href="http://daum.net";
+//        }else{
+//            alert("네이버로 이동합니다.");
+//            location.href="http://naver.com";
+//        }
+        
+        var userid=prompt("아이디를 입력하세요.");
+        var userpw=prompt("비밀번호를 입력하세요.");
+        
+        if(userid=="soyo0823" && userpw=="1111"){
+            alert("회원이 맞습니다.");
+            location.href="http://daum.net";
+        }else{
+            alert("다시한번 확인해주세요.");
+            location.href="http://naver.com";
+            // history.go(-1);// -숫자만큼 뒤로
+            // history.bac();// 바로 이전 페이지
+        }
+        
+    
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!--    <script src="js/jquery.min.js"></script>-->
+<!--    <link rel="stylesheet" href="css/reset.css">-->
+</head>
+    <script>
+    
+        $(document).ready(function(){
+//            $('*').css('margin','0').css('padding','0');
+//            $('*').css('padding','0');
+            $('*').css({'margin':'0','padding':'0'});
+            $('html, body').css({'with':'100%','height':'100%',});
+            $('a').css({'text-decoration':'none','color':'#ccc'});
+            $('ul,ol,li').css({'list-style':'none'});
+            $('img').css({'boder':'0'});
+            
+            $('#page').css({'width':'300px','height':'auto','border':'1px solid','margin':'0 auto'});
+            
+            $('#page h1#header').css({'height':'100px','background':'#ff0','line-height':'100px','text-align':'center'});
+            
+            $('#page > h2').css({'height':'50px','background':'#ccc'});
+            $('#page > ul li.hot').css({'background':'#000','color':'#fff'});
+            $('#page > ul li#one').css({'background':'#f0f'});
+            $('#page > ul li#one + li').css({'background':'#f00','height':'100px'});
+            
+            $('#page > ul li#two ~ li').css({'height':'50px','border':'10px solid #00f'});
+            
+            $('#page > ul li:odd').css({'background':'#0f0'});//0번지 부터 시작함 (홀수)
+            $('#page > ul li:even').css({'background':'#f00'});//0번지 부터 시작함 (짝수)
+            $('#page > ul li:first').css({'font-size':'50px'});// li중에 첫번째
+            $('#page > ul li:last').css({'font-size':'50px'});// li중에 마지막
+            $('#page > ul li:not("#one")').css({'color':'#000'});//one 빼고 
+            $('#page > ul li:nth-child(1)').css({'background':'#000'}); //이건 1번부터 시작함 0번지 ㄴㄴ
+            $('#page > ul li:nth-child(2)').css({'background':'#0f0'});
+            $('#page > ul li:nth-child(3)').css({'background':'#0ff'});
+            $('#page > ul li:nth-child(4)').css({'background':'#ff0'});
+            $('#page > ul li:first-child').css({'background':'#efe'});
+            $('#page > ul li:last-child').css({'background':'#fef'})
+            
+        });
+    
+    </script>
+
+<body>
+    
+    <div id="page">
+        <h1 id="header">List</h1>
+        <h2>구입 물품 목록</h2>
+        <ul>
+            <li id="one" class="hot"><em>신선한</em>무화과</li>
+            <li id="two" class="hot">잣</li>
+            <li id="three" class="hot">꿀</li>
+            <li id="four">발사믹 식초</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

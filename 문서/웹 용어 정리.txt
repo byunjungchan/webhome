@@ -1,0 +1,180 @@
+
+1. WEB의 동작 원리
+
+- 사용자가, 웹에 요구하면 서버가 요청에 대한 답을 응답해주는 원리
+
+2. 클라이언트 프로그램(HTML, CSS, JAVASCRIPT)의 특성 정리
+
+HTML - 웹 문서를 만들기 위하여 사용하는 기본적인 프로그래밍 언어의 한 종류
+       (기본적으로 구조를 잡는다.)
+
+CSS - 웹 문서의 전반적인 스타일을 미리 저장해 둔 스타일시트이다. 문서 전체의       일관성을 유지할 수 있고, 세세한 스타일 지정의 필요를 줄어들게 하였다.
+       (구조에 디자인을 입힌다.)
+
+JAVASCRIPT - 자바스크립트는 크로스 플랫폼(cross platform), 객체지향 스크립트                언어로 웹페이지의 동작을 담당한다.
+             (액션주는 역활)
+
+3. 포지션 absolute, relative, fixed의 특성 정리
+
+absolute - 부모태그가 position 설정이 되어 있으면 부모의 기준좌표 중심으로
+           재배치
+
+relative - 나를 중심으로 재배치 한다. 현재의 자기 위치에서 재배치하고
+           margin:0 auto 설정이 가능하다.
+
+fixed - 고정형/기존배치 무시하고 브라우저 기준좌표로 재배치 값을 설정안하면
+        (left, top, right, bottom) 기본 포지션과 같다.
+        "애플 상단바 같은 고정"
+
+웹의 원래 의미는 「거미집」으로 하나의 사이트나 또는 다른 사이트와의 관계가 거미집처럼 복잡하게 얽혀 있기 때문에 웹이라고 부른다.
+
+
+=================================================
+
+transform
+animation
+vedeo, audio
+반응형 웹디자인
+
+
+
+선택자{속성:값;;}
+div{width:100px;height:100px;}
+
+====
+밴더프리픽스 >> 각각의 브라우저에 속성을(css3) 적용하기 위해 접두사를 붙임
+-ms- 익스플로어
+-moz-파이어폭스
+-webkit-크롬, 사파리
+-os- 오페라
+
+transition >> 속성을 시간 동안 구현
+transition: 속성 시간 width 1s, height 2s >> all 0.1s
+
+프로그램언어활용_실기평가_본인이름
+
+
+====실습1
+
+#wrap 100% auto
+
+.header 100%*80
+ .gnb 700*80 가로가운데
+
+   ul>li*7>a
+
+    li.one 140*80
+    li.two*4 100*80
+    li.three*2 80*80
+
+.content 700*auto 가로가운데
+ section*3 700*500
+.footer 700*200
+
+
+미디어쿼리
+
+====
+
+margin: 나하고 부모 또는 다른 태그와의 여백
+padding: 나하고 내자식 태그와의 여백
+
+transform  <<>> transition과 함께 사용
+
+
+translate "위치변화"
+scale "크기" zoom
+rotate "회전"
+skew "변형"
+
+
+
+block >>
+
+inline "자동으로 부모의 왼쪽부터 오른쪽으로 가로정렬"
+width, height 안먹힘
+컨텐츠가 없으면 보이지 않는다.
+
+span, a  
+
+span >> 하나의 특징적인
+
+display: block, inline, inline-block, none
+
+
+
+anmiation >> 키 프레임을 기준으로 변화되는 스타일 적용 >> 시간에 따라 애니메이션효과"
+
+transform  <<>> transition과 함께 사용
+
+animation-name:autogallery;
+animation-duration:4s
+
+@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

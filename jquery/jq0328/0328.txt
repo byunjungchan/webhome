@@ -1,0 +1,134 @@
+1. append(value)
+
+$(A).append(B) A사이에 B가 추가됩니다.(뒤로추가)
+
+
+2. prepend(value)
+
+수 앞에 선택자 표현을 하고 선택된 요소에 함수의 인자인 내용이 삽입됩니다.
+
+
+3. appendTo(selector)
+
+$(A).append(B) A가 B사이에 추가됩니다.(뒤로추가)
+
+
+4. prependTo(selector)
+
+함수의 인자로 선택자가 전달되어 요소를 선택한 후 함수 앞의 내용이 삽입됩니다.
+
+
+5. after(value)
+
+어떤 요소 뒤에 새로운 요소를 추가합니다.
+
+
+6. before(value)
+
+선택된 요소 앞(before)에 인자로 주어진 요소를 삽입합니다.
+
+
+7. insertAfter(selector)
+
+A.after(B)라면 A 뒤에 B를 추가하는 것이고 A.insertAfter(B)는 B 뒤에 A를 추가하는 겁니다.
+
+
+8. insertbefore(selector)
+
+함수 앞에 내용이 함수의 인자로 주어진 타겟 요소 앞에 삽입됩니다.
+
+
+9. remove()
+
+조건에 맞는 요소를 DOM에서 제거합니다.
+
+
+10. empty()
+
+DOM에서 조건에 일치하는 요소들의 자식 노드들을 제거합니다.
+
+
+
+외부스타일
+
+.siblings 1000*auto 가로가운데
+
+	ul>li*20 20% 200 float : left
+	
+	li >> 배경
+	li.txt
+
+.hover(
+	function(){
+	},
+	function(){
+	}
+
+);
+
+
+
+
+///
+
+.animate() << effect
+
+.setInterval() <<
+
+.offset() << 위치
+
+.siblings() <<
+
+.addClass() <<
+
+.removeClass() <<
+
+
+
+==실습
+
+#wrap
+
+.nav 100% 560 relative
+
+ .nav .gallery 1200 560 가로가운데 relative
+
+	.gallery > ul 500%*560 absolute
+
+	.gallery > ul >li 20%*560 float:left
+
+ .nav .arrow 50 50 absolute
+
+
+.animate({'속성':'값',시간})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

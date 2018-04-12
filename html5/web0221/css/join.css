@@ -1,0 +1,119 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+.naverjoin{
+    width:460px;
+    height:auto;
+    border:1px solid;
+    margin:0 auto;
+}
+.naverjoin .header{
+    width:100%;
+    height:auto;
+    background:#f5f6f7
+}
+.naverjoin .content{
+    width:100%;
+    height:auto;
+    border:1px solid #cccccc;
+}
+.naverjoin .footer{
+    width:100%;
+    height:auto;
+    border:1px solid #00f;
+}
+
+/* .naverjoin .header 시작 */
+
+.naverjoin .header h1.logo{
+    line-height:170px;
+    text-align:center;
+    font-size:40px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color:#1fbc02;
+    font-weight:0;
+    letter-spacing:2px;
+    text-shadow: 3px 3px 3px #fdfdfd;
+    cursor:pointer;
+/*     transition:all 0.5s; 글씨커짐 */
+}
+.naverjoin .header h1.logo:hover{
+    text-decoration:underline;
+    text-shadow: 0px 0px 100px #cbffc1;
+}
+
+
+/* .naverjoin .content 시작 */
+
+.naverjoin .content>ul>li{
+    line-height:50px;
+    border:1px solid #cccccc;
+    box-sizing:border-box;
+    padding:0px 5px;
+}
+
+/*a1 시작*/
+
+.naverjoin .content>ul>li.a1{
+    background:#fff;
+}
+
+.naverjoin .content>ul>li.a1 input{
+    width:300px
+}
+.naverjoin .content>ul>li.a1:nth-child(1){
+    background:#fff
+}
+.naverjoin .content>ul>li.a1:nth-child(1):hover{
+    background:#fff;
+}
+.naverjoin .content>ul>li.m1{
+    margin-bottom:10px;
+    background:#fff;
+}
+.naverjoin .content>ul>li input{
+    height:25px;
+    border:0;
+}
+
+/*a2 시작*/
+
+.naverjoin .content>ul>li.a2.one{
+    background:#fff;
+}
+.naverjoin .content>ul>li.a2.one input{
+    width:100%;
+}
+.naverjoin .content>ul>li.a2.btn{
+    background:#fff;
+}
+.naverjoin .content>ul>li.a2.btn input{
+    width:49%;
+    background:#fff;
+    border:1px solid #cccccc;
+    color:#555;
+    height:35px;
+}
+.naverjoin .content>ul>li.a2.btn input:hover{
+    background:#f2f2f2;
+    cursor:pointer;
+    color:#555;
+}
+
+/*a4 시작*/
+
+.naverjoin .content>ul>li.a3 input{
+    width:100px;
+}
+
+
+/*a4 시작*/
+.naverjoin .content>ul>li.a4 input{
+    width:100%;
+    height:40px;
+    background:#1fbc02;
+    color:#fff;
+}
+
+
+
+/* .naverjoin .footer 시작 */

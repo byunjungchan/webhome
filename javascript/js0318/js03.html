@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자바</title>
+</head>
+<body>
+   
+   <div class="box1"></div>
+   <div class="box2"></div>
+   <div class="box3"></div>
+   
+    <script>
+        var boxparent={
+            name:'box',
+            countbox:10,
+            boxcoin:1000,
+            boxmethod:function(){
+                console.log("box이름: "+this.name);
+                console.log("box갯수: "+this.countbox);
+                console.log("box가격: "+this.boxcoin);
+                
+                return this.boxcoin-this.countbox;
+            } 
+        }
+        var box1=document.getElementsByClassName("box1")[0];
+        var box2=document.getElementsByClassName("box2")[0];
+        var box3=document.getElementsByClassName("box3")[0];
+        
+        box1.textContent=boxparent.name;
+        box2.textContent=boxparent.boxcoin;
+        box3.textContent=boxparent.boxmethod();
+    
+    
+    
+    
+    </script>
+    
+</body>
+</html>

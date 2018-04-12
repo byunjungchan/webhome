@@ -1,0 +1,77 @@
+@charset "utf-8";
+#wrap{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background: #fffccc;
+}
+
+.a{
+    width: 100%;
+    height: 110px;
+    margin: 0 auto;
+    background: #80c269;
+}
+.b{
+    width: 970px;
+    height: 480px;
+    margin: 0 auto;
+    background:url(../img/bg01.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    position: relative;
+}
+.c{
+    width: 970px;
+    height: 190px;
+    margin: 0 auto;
+    background: #cfa972;
+}
+.d{
+    width: 970px;
+    height: 110px;
+    margin: 0 auto;
+    background: #7ecef4;
+}
+.e{
+    width: 970px;
+    height: 80px;
+    margin: 0 auto;
+    background: #fff799;
+}
+
+
+
+/* b 시작 */
+
+.b .arrow{
+    width: 50px;
+    height: 80px;
+    position:absolute;
+}
+
+.b .arrow l{
+    background: url(../img/arrow_l.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    left: 0;
+}
+
+.b .arrow r{
+    background: url(../img/arrow_r.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+

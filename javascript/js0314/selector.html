@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>selector</title>
+    <script>
+    
+    
+    
+
+    </script>
+</head>
+<body>
+    
+    <button id="btn">button</button>
+    
+    <div id="wrap">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+    </div>
+    
+    <form action="joinOk.php" name="join" method="post">
+        
+        <label for="userId">아이디:</label>
+        <input type="text" name="userId" id="userId"><br>
+        
+        <label for="userPw">비밀번호:</label>
+        <input type="password" name="userPw" id="userPw"><br>
+        
+        <input type="submit" value="로그인">
+        
+    </form>
+    
+    <script>
+    
+        var btnId=document.getElementById("btn");
+        var wrapId=document.getElementById("wrap");
+        
+        btnId.addEventListener('click',func1);
+        
+        function func1(){
+            
+            wrapId.style.background="#ff0";
+            wrapId.style.width="300px";
+            wrapId.style.height="300px";
+            wrapId.style.borderRadius="50%";
+            
+        }
+        
+    
+    </script>
+    
+</body>
+</html>

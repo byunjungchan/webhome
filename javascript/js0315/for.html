@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>for</title>
+</head>
+<body>
+    
+    
+    <button id="btn">button</button>
+    
+    <div class="box">
+        
+        
+        
+    </div>
+    
+    <script>
+        
+        var btn=document.getElementById("btn");
+        var box=document.getElementsByClassName('box')[0];
+        
+        btn.addEventListener('click', btnfun);
+        
+        function btnfun(){
+            
+             var list=document.getElementsByClassName('list');
+        
+        for(var i=0;i<10;i++){
+            
+            
+//            console.log("img/bg"+i+".jpg");
+//            console.log(i);
+            document.write("<div class='list'>list</div>");
+            list[i].style.width="300px";
+            list[i].style.height="100px";
+            list[i].style.border="1px solid";
+            list[i].style.float="left";
+            list[i].style.textAlign="center";
+            list[i].style.lineHeight="100px";
+            list[i].style.fontSize="50px";
+            list[i].style.boxSizing="border-box";
+            list[i].style.background="url(img/bg"+i+".jpg) no-repeat 50%";
+            list[i].style.backgroundSize="cover";
+            
+            
+            
+        }
+//            list[0].style.width="300px";
+//        list[0].style.height="100px";
+//        list[0].style.border="1px solid";
+//            
+        }
+        
+        
+        
+        
+    //for 문
+        //문자+숫자
+        
+//        var list=document.getElementsByClassName('list');
+//        
+//        for(var i=0;i<10;i++){
+//            
+//            
+////            console.log("img/bg"+i+".jpg");
+////            console.log(i);
+//            document.write("<div class='list'>list</div>");
+//            list[i].style.width="300px";
+//            list[i].style.height="100px";
+//            list[i].style.border="1px solid";
+//            list[i].style.float="left";
+//            list[i].style.textAlign="center";
+//            list[i].style.lineHeight="100px";
+//            list[i].style.fontSize="50px";
+//            list[i].style.boxSizing="border-box";
+//            list[i].style.background="url(img/bg"+i+".jpg) no-repeat 50%";
+//            list[i].style.backgroundSize="cover";
+//            
+//        }
+//        
+//        list[0].style.width="300px";
+//        list[0].style.height="100px";
+//        list[0].style.border="1px solid";
+        
+        
+    
+    
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>

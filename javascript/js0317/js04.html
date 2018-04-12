@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>logicla</title>
+</head>
+<body>
+   
+    <button>button</button>
+    <div class="box"></div>
+    <script>
+        //document.querySelectorAll('button');
+        //document.querySelectorAll('.box');
+        var btn=document.getElementsByTagName('button');
+        var box=document.getElementsByClassName('box');
+        
+        btn[0];
+        box[0];
+        
+        btn[0].addEventListener('click', function(){
+            
+            varSub("이름",11);
+            
+        })
+        
+        document.getElementById
+        
+        var version=0;//전역변수("프로그램이 종료할 때 종료");
+        
+        function varSub(name, age){//매개변수 >> 지역변수
+            
+            var person="이름은: "+name+", 나이: "+age+"살입니다.";
+            var num=0;//지역변수("함수가 종료되면 사라진다")
+            
+            console.log(person);
+            box[0].textContent=person;
+            
+            console.log("전역 변수 >> "+(version++));
+            console.log("지역 변수 >> "+(num++));
+            
+            //return
+        }
+
+
+
+
+    </script>
+   
+    
+</body>
+</html>

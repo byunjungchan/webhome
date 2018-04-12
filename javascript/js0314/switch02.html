@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>switch</title>
+    <script>
+    
+    var query=prompt("쿼리문을 입력하세요.(select,insert,update,delete)");
+        
+        switch(query){
+                
+            case "select":
+            alert("회원조회");
+            location.href="http://memberlist.php";
+            break; 
+                
+            case "insert":
+            alert("회원가입");
+            location.href="http://memberjoin.php";
+            break; 
+                
+            case "update":
+            alert("회원수정");
+            location.href="http://memberupdate.php";
+            break; 
+                
+            case "delete":
+            alert("회원탈퇴");
+            location.href="http://memberdelete.php";
+            break;
+                
+            default:
+                alert("쿼리문을 입력하세요.");
+        }
+        
+        
+        
+    
+    
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

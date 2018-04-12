@@ -1,0 +1,175 @@
+tabl, form 회원가입 로그인페이지 만들거다~
+
+1. 기획
+.nav 1000*100
+	
+	ul>li*5 20%*100
+
+	ul>li>1mg 180*60    720*240
+
+
+이미지는 width 값에 따라서 height가 자동으로{원본이미지의 같은 비율)
+
+padding "나하고 내 자식과의 여백
+
+margin "나하고 부모또는 다른 태그와의 여백"
+
+padding-top:
+padding-bottom:
+padding-left:
+padding-right:
+
+padding:위/아래 좌/우;
+
+padding: 10px 위아래좌우
+
+
+==========================
+
+table
+
+1. block
+2. 특정(DB관련) 부분에 사용
+3. 정해진 용도 사용되고 변형하기가 어렵다.
+4. 반복적이고 단순한 구조에 적합(게시판, 쇼핑몰, 반복 구조)
+5. HTML5에서는 사용을 많이 하지 않는다.
+
+<th> 테이블 헤드(제목)
+
+**스타일 적용을 인라인으로 하지 않는다**
+rowspan 행 통합
+colspan 셀 통함
+
+
+
+실습2
+
+memberjoin.html
+
+memberjoin.css
+
+
+.join 1000*auto 가로가운데
+.join 안에 table관련 태그로만 만들어 보세요.
+
+table은 13행 3열 테이블
+
+
+==========================
+
+form
+
+"클라이언트 정보를 서버에 전달"
+
+사람	엔진	브라우저
+소스		객체(object)
+		속성(프로퍼티) << 맴버
+		매서드(기능) << 맴버
+
+form		form
+
+name >>> 서버 전송 키
+value >>> 키에 해당하는 값
+
+action="폼의 정보를 전송받을 서버페이지" 
+method="전송방식" 기본 get(GET), post(POST)
+input
+type="text" 텍스트를 입력
+
+
+input type="password" 입력타입이 패스워드다
+
+radio 하나만 선택 "name값이 같아야한다."
+
+type="submit" 서버에 전송  << 서버에 form안의 값을 전송
+
+type="button" 자바스크립트 이벤트 설정
+
+
+====
+
+실습3
+
+아이디 text
+
+비번 password
+비번확인 password
+
+이름 text
+
+남자 button 여자 button
+
+생일 년text, 월select, 일text
+
+이멜 text
+
+전번 select, text, button 인증
+
+인증번호 text, button확인
+서버전송 submit
+
+====
+
+조별프로잭트
+
+5시까지 정해라
+
+만들고 싶은 웹사이트 정하기
+
+조별 발표 1명 2월27일(목) 아이리버
+
+조별 정리 1명
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

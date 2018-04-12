@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>table</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style><!--테이블 효과는 스타일에서 준다-->
+        .box{
+            width: 1000px;
+            margin: 0 auto;
+            border: 1px solid;
+        }
+        table{
+            width: 1000px;
+            padding:0;
+            border-collapse: collapse;
+        }
+        table, th,td{
+            border: 1px solid;
+            padding: 0;
+            margin: 0;
+        }
+        td.title{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <div class="box">
+       <table>
+          <tr>
+             <td colspan="5" class="title">제목</td>              
+          </tr>
+           <tr><!-- 행 -->
+               <th>아이디</th><!-- th는 제목 -->
+               <th>비밀번호</th>
+               <th>이름</th>
+               <th>주소</th>
+               <th>전화번호</th>              
+           </tr>
+           <tr>
+               <td rowspan="2">soyo</td><!-- 겹치는 셀하나 지워야함 -->
+               <td>1111</td>
+               <td>byun</td>
+               <td>서울특별시 흑석동 69-154번지</td>
+               <td>010-3739-5263</td>
+           </tr>
+           <tr>
+               <td>1111</td>
+               <td>byun</td>
+               <td>서울특별시 흑석동 69-154번지</td>
+               <td>010-3739-5263</td>
+           </tr>
+           <tr>
+               <td>soyo</td>
+               <td>1111</td>
+               <td>byun</td>
+               <td>서울특별시 흑석동 69-154번지</td>
+               <td>010-3739-5263</td>
+           </tr>
+       </table>
+       
+   </div>
+    
+</body>
+</html>

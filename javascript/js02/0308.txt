@@ -1,0 +1,201 @@
+1. 자바스크립트 data 자료형(type)의 종류
+
+문자열(String)
+
+숫자(Number)
+
+불린(Boolean)
+
+Undefined / Null
+
+객체(Object) / 배열(Array) / 함수(Function)
+
+
+2. 자바스크립트 상수란?
+
+상수는 변수와 달리 한번 설정하면 readonly 읽기만 하는 자료형을 말합니다. 다시말해 한 번 설정하면 절대 변하지 않는 값입니다. 
+
+3. 자바 스크립트 내장객체에 대해서 정리
+
+내장객체란 자바스크립트 엔진에 들어있어 바로바로 사용할 수 있는 객체이다
+
+====================
+
+
+==실습 01 (신라호텔)
+
+ #wrap 100% auto 
+
+  .header 100% auto
+
+  .nav 100% auto
+
+  .contents 100% auto
+
+  .footer 100% auto
+
+ 
+
+/heder/
+
+ .hmenu 1200 90 가로가운데
+
+  .leftm float:레프트 250 90
+
+  .h1.mainlogo 600 90
+  
+  .rightm float:레프트 350 90
+
+
+/nav/
+
+ .nav .gallery 1920 650 가로가운데 relative
+
+  .gallery ul li*5>img absolute 1920 650
+
+  .cheakgnb absolute 가로가운데 1200 70
+
+  
+/contents/
+
+
+  .section .content 1200 auto 가로가운데
+
+
+  .section.sec1 .content height 1000
+
+  .section.sec2 .content height 350
+
+  .section.sec3 .content height 1100
+
+
+/footer/
+
+
+.tf 100% auto
+
+ .fcontent 1200 110 가로가운데
+
+.bf 100% auto
+
+ .fcontent 1200 200 가로가운데
+
+
+
+==
+
+변수 "하나의 data를 저장 할 수 있는 저장 공간"
+
+1.공간(주소) 메모리
+
+2.참조(주소가 참조값)
+
+배열"하나 이상의 data를 순서대로(index) 그룹화 시킨객체
+	array()
+
+
+var num=190; /// 변수 num을 선언하고 정수형(숫자)자료형의
+		 data 10으로 초기화 했다.
+
+자바스크립트는 객체 지향적 언어
+
+bom 브라우저 오브젝트 모델
+
+
+dom 도큐먼트 오브젝트 모델 < 브라우저에 표시되는 문서(html)
+
+
+ecmascript 내장객체
+
+======================
+
+변수 명명 규칙
+
+1. 숫자로 시작하지 않는다.
+
+2. 공란은 허용하지 않는다.
+
+3. 한글 사용하지 않는다.
+
+4. 특수기호 _ $ 이외의 특수 기호를 허용하지 않는다.
+
+5. 대소문자를 구분 한다.
+
+6. 단어가 연결되면 첫번째 단어는 대문자로 사용하길 권장
+   ex) var numActionQueryMember=10
+
+7. var 키워드를 사용하지 않아도 변수를 선언 할 수 있다.
+   "그래도 쓰자"
+
+8. 키워드(예약어)는 사용할 수 없다.
+
+변수의 자료형 (type) "data의 자료형에 따라 변수의 자료형 결정"
+
+var num=100;
+
+var num="manso"
+
+typeof 변수명;//변수의 자료형을 알아보는 함수
+
+1. number(숫자)
+
+문자열+숫자 = 문자열+문자열
+ex) "100"+100 = "100100"
+
+2. string(문자열)
+
+
+3. boolean(논리) true, false 
+
+4. 배열 >>> object
+
+
+//get >> 가져오다.
+
+//set >> 내가 설정한다.
+
+
+window.doucment.getElementById('아이디명')
+
+
+객체를 구성하는 맴버(프러퍼티, 매서드, 객체)
+
+객체 = {
+	속성1(프로퍼티),
+	속성2,
+	매서드=function(){
+	
+	},
+
+
+	객체={
+
+	}
+
+}  //. <<< 객체 접근(참조) 연산자
+
+객체.속성1
+객체.객체.속성;
+객체.매서
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

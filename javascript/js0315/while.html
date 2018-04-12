@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>while</title>
+</head>
+<body>
+    
+    <div class="box"></div>
+    
+    <script>
+    //while문
+    
+    
+        var box=document.getElementsByClassName('box');
+        box[0].style.background="#ccc";
+        box[0].style.width="300px";
+        box[0].style.border="1px solid";
+        
+        
+        var num=0;
+        
+        while(true){
+            
+            box[0].innerHTML+=num+"<br>";
+            console.log(num);
+            if(num==9)
+//                continue; 다시 실행
+                break;
+            
+            num++;
+            console.log(num);
+            
+        }
+        
+//        while(num<10){
+//            
+//            box[0].innerHTML+=num+"<br>";
+//            num++;
+//            
+//        }
+        
+    </script>
+    
+    
+    
+</body>
+</html>

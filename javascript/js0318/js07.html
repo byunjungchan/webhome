@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+    <script>
+        
+//        function Car(){
+//            
+//            this.carName;
+//            this.carYear;
+//            
+//        }
+//        var car1=new Car();
+//        Car1.carName=100;
+        
+        //책에 111 페이지에 있음
+        
+        function Car(carName,carCoin,carWeight,carYear){
+            
+            this.carName=carName;
+            this.carCoin=carCoin;
+            this.carWeight=carWeight;
+            this.carYear=carYear;
+            
+            this.carMethod=function(){
+                
+                console.log(this.carName);
+                console.log(this.carCoin);
+                console.log(this.carWeight);
+                console.log(this.carYear);
+            }
+            
+        }
+            //인스턴스화(객체화)
+        var car1=new Car("Car1",1000,2000,1991);
+        var car2=new Car("Car2",2000,3000,2018);
+        
+    
+        var box=document.getElementsByClassName('box');
+        
+            box[0].textContent=car1.carName;
+            box[1].textContent=car1.carCoin;
+            box[2].textContent=car1.carMethod();
+            
+        
+    </script>
+    
+    
+</body>
+</html>

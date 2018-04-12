@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+</head>
+<body>
+  <form action="joinok.php">
+   
+   <label for="userid"></label><input type="text" name="userid" id="userid" placeholder="아이디@naver.com">
+   <br>
+   <input type="password" name="userpw" id="" placeholder="비밀번호">
+   <br>
+   <input type="password" name="userpw" id="" placeholder="비밀번호 재확인">
+   <br>
+   <br>
+   
+   <input type="text" name="username" id="" placeholder="이름"><br>
+   <input type="button" onclick="javascript:alert('남자선택');" value="남자">
+   <input type="button" onclick="javascript:alert('여자선택');"  value="여자">
+   <br>
+   
+   <label for="userbrith">생일</label>
+   <select name="month" id="">
+       <option value="월" selected>월</option>
+       <option value="월">1월</option>
+       <option value="월">2월</option>
+       <option value="월">3월</option>
+       <option value="월">4월</option>
+       <option value="월">5월</option>
+       <option value="월">6월</option>
+       <option value="월">7월</option>
+       <option value="월">8월</option>
+       <option value="월">9월</option>
+       <option value="월">10월</option>
+       <option value="월">11월</option>
+       <option value="월">12월</option>
+       
+   </select>
+   <input type="text" name="email" id="" placeholder="일">
+   <br>
+   
+   <input type="text" name="email" id="" placeholder="본인 확인 이메일(선택)">
+   <br>
+   <br>
+   
+   <select name="phone1" id="">
+       <option value="+82" selected>+82</option>
+       <option value="010">010</option>
+       <option value="011">011</option>
+       <option value="017">017</option>
+       <option value="070">070</option>
+   </select>
+   <input type="text" name="phonename" id="" placeholder="휴대전화번호">
+   <input type="button" onclick="javascript:alert('인증');" value="인증">
+   <br>
+   
+   <input type="text" name="phoneghkrdls" id="" placeholder="인증번호">
+   <input type="button" onclick="javascript:alert('인증확인');" value="인증확인">
+   <br>
+   <br>
+   
+   <input type="submit" value="회원가입">
+    </form>
+</body>
+</html>

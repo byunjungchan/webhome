@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/join.css">
+</head>
+<body>
+<div class="join">
+    <form action="joinok.php" method="get">
+        <div class="header">
+            <ul>
+                <li>
+                    <label for="header">회원가입</label>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <ul>
+                <li class="a1">
+                    <input type="text" name="userid" placeholder="아이디">
+                </li>
+                <li class="a2">
+                    <input type="password" name="userpw" id="pw1" placeholder="비밀번호">
+                </li>
+                <li class="a2">
+                    <input type="password" name="userpw" id="pw2" placeholder="비밀번호확인">
+                </li>
+                <li class="a3">
+                    남자<input type="radio" name="usergender" id="남자">
+                    여자<input type="radio" name="usergender" id="여자">
+                </li>
+                <li class="a4">
+                    <input type="checkbox" name="userhobbys[]" value="인터넷" id="">인터넷
+                    <input type="checkbox" name="userhobbys[]" value="영화감상" id="">영화감상
+                    <input type="checkbox" name="userhobbys[]" value="음악청취" id="">음악청취
+                    <input type="checkbox" name="userhobbys[]" value="운동" id="">운동
+                    <input type="checkbox" name="userhobbys[]" value="코딩" id="">코딩
+                </li>
+                <li class="a5">
+                   <select name="userjob" id="">
+                       <option value="">+82</option>
+                       <option value="">010</option>
+                       <option value="">011</option>
+                       <option value="">070</option>
+                   </select>
+                    <input type="text" name="userphone" id="" placeholder="전화번호">
+                </li>
+            </ul>               
+        </div> 
+    </form>
+</div>   
+</body>
+</html>

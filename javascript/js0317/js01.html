@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자바</title>
+</head>
+<body>
+   
+    <script>
+    
+    
+        //배열
+        //배열 선언 1
+        
+        var arrInt=new Array();///
+        arrInt[0]=10;
+        arrInt[1]=20;
+        arrInt[2]=30;
+        arrInt[3]=40;
+        arrInt[4]=50;
+        
+        arrInt.length;// 배열의 총 갯수
+        
+        console.log(arrInt[0]);
+        console.log(arrInt[1]);
+        console.log(arrInt[2]);
+        console.log(arrInt[3]);
+        console.log(arrInt[4]);
+       
+        //1~5까지 for문을 이용해서 배열 arrint2를 초기화
+        var arrInt2=new Array();
+       
+       
+        for(var i=0;i<5;i++){
+            
+            arrInt2[i]=i+1;
+            console.log(arrInt2[i])
+        }
+       
+        var arrImg=[];
+        
+//        arrImg[0]="img/bg0.jpg";
+//        arrImg[0]="img/bg1.jpg";
+//        arrImg[0]="img/bg2.jpg";
+//        arrImg[0]="img/bg3.jpg";
+//        arrImg[0]="img/bg4.jpg";
+        
+        for(var i=0;i<5;i++){
+            
+            arrImg[i]="<img src='img/bg"+i+".jpg' alt=''>";
+            console.log(arrImg[i]);
+            document.write("<img src='img/bg"+i+".jpg' alt=''>");
+        }
+       
+       
+    </script>
+    
+</body>
+</html>

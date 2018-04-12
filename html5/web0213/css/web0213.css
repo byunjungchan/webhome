@@ -1,0 +1,47 @@
+@charset "utf-8";
+/*외부 스타일*/
+div.box{
+    width: 1000px;
+    height: auto; 
+    border: 10px solid #ff0;
+    margin: 0 auto;
+}
+div.box h1{ /*하위 선택자*/
+    width: 200px; height: 100px; background: #f00;
+            
+}
+div.box > h1{ /*자식 선택자*/
+    width: 200px; height: 100px; background: #ff0;
+            
+}
+div.box h2{
+    width: 200px;
+    height: 50px;
+    background-color: #0000ff;
+}
+div.box h3{
+    width: 300px;
+    height: 100px;
+    background-color: aqua;
+}
+div.box h4{
+    background-color: bisque
+}
+div.box h5{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(255,0,255);
+}
+div.box h6{
+    width: 150px;
+    height: 50px;
+    background-color: #cccccc;
+}
+
+
+
+
+
+
+
+

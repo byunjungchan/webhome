@@ -1,0 +1,56 @@
+@charset "utf-8";
+.box{
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    text-align:center;
+    line-height:200px;
+    font-size:30px;
+    transition:all 0.2s;
+    cursor:pointer;
+
+
+}
+
+/* position:absolute 연습 예제 */
+
+.parent{
+    width:1000px;
+    height:600px;
+    position:absolute;
+    background:#ccc;
+    left:200px;
+    top:200px;
+
+}
+
+
+.box.a1{
+    background:#f00;
+    color:#fff;
+    position: absolute;
+    left:200px;
+    top:200px;
+}
+.box.a2{
+    background:#00f;
+    color:#fff;
+    position:absolute;
+    left: 400px;
+    top:200px;
+}
+.box.a3{
+    background:#ff0;
+    color:#000;
+    position:absolute;
+    left:600px;
+    top:200px;
+}
+.box:hover{
+    border-radius:50%;
+    width:300px;
+    height:300px;
+    line-height:300px;
+    top:150px;
+
+}

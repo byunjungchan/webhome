@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자바스크립트</title>
+</head>
+<body>
+   
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+    <script>
+        
+            var car=new Object();
+        
+        
+            car.carWeight=1000;
+            car.carCoin=2000;
+            car.carName="soyo";
+            car.carYear=2018;
+        
+            car.carMethod=function(){
+                
+                console.log("자동차 무게: "+this.carWeight);
+                console.log("자동차 가격: "+this.carCoin);
+                console.log("자동차 이름: "+this.carName);
+                console.log("자동차 년식: "+this.carYear);
+                
+                return this.carYear-1900;
+
+            }
+            
+            var box=document.getElementsByClassName('box');
+        
+            box[0].textContent=car.carName;
+            box[1].textContent=car.carCoin;
+            box[2].textContent=car.carMethod();
+
+            
+        
+    </script>
+</body>
+</html>

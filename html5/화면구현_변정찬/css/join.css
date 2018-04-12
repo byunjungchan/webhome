@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body{
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.join table{
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+}
+td{
+    border: 1px solid #cccfff;
+    box-sizing: border-box;
+    height: 30px;
+    color: #444;
+}
+
+.jemok{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    background: #666666;
+}
+
+.last{
+    text-align: center;
+}

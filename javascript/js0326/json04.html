@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>json</title>
+</head>
+<body>
+  
+   <div id="jsonTxt"></div>
+   
+    <script>
+        
+        var myObj = { "name":"John", "age":30, "car":null };
+        
+        for (idx in myObj) {
+            document.getElementById("jsonTxt").innerHTML += idx + "<br>";
+        }
+        
+        
+        var myObj2 = {
+        "name":"John",
+        "age":30,
+        "cars": {
+        "car1":"Ford",
+        "car2":"BMW",
+        "car3":"Fiat"
+    }
+ }
+        for (idx in myObj2) {
+            
+            console.log(idx);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,441 @@
+
+(자바스크립트 선택자)
+
+
+1. document.querySelector();
+
+selector들이 지정한 그룹과 일치하는 document 내의 첫 번째 element를 반환합니다. (depth-first를 우선적으로 사용해 문서의 노드들을 탐색합니다. 자식 노드의 양에 따라 첫 element를 검색하는 것을 순차적으로 반복하여 탐색합니다. )
+
+
+2. document.getElementsById();
+
+ID가 서술된 element를 반환.
+
+
+3. document.getElementsByClassName();
+
+지정된 클래스 이름을 모두 포함하는 모든 하위 요소의 어레이와 같은 개체를 반환합니다. 문서 개체를 호출하면 루트 노드를 포함하여 전체 문서가 검색됩니다. 또한 모든 요소에 대해 ge.lements()를 호출할 수 있습니다. 그러면 지정된 클래스 이름을 가진 지정된 루트 요소의 하위 항목인 요소만 반환됩니다.
+
+
+4. document.getElementsBytagName();
+
+Element.getElementsByTagName() 메서드는 제공된 태그 네임(tag name)을 가지는 엘리먼트의 유효한 HTML 컬랙션를 반환합니다. 엘리먼트가 특정된 범위를 검색하는 경우, 그 자신의 엘리먼트는 제외하고, 특정된 엘리먼트의 하위에 있는 서브트리가 검색됩니다. 반환된 리스트가 live 상태이면,  리스트는 DOM 트리와 함께 자동적으로 업데이트 되는 것을 의미합니다. 결과적으로, 동일한 엘리먼트와 인자값으로 Element.getElementsByTagName()을 여러번 호출할 필요성은 없어집니다.
+
+
+5. document.querySelectorAll();
+
+요소 메서드 쿼리/선택 도구 애질런트()는 지정된 선택기 그룹과 일치하는 문서의 요소 목록을 나타내는 정적(라이브는 아님)노드 목록을 반환합니다.
+
+
+=======================================
+
+변수 "하나의 data를 저장 할 수 있는 저장공간"
+
+var num=10;// 변수 num을 선언했다. 자료형이 숫자(number)인 10으로 초기화했다.
+
+
+num=100;// 변수 num에 100을 대입한다.
+
+
+data의 종류
+
+number 숫자(정수, 실수)
+
+string 문자열
+
+object 객체  >> 배열, 객체..
+
+null 공간만 있다. >> 없다.
+
+
+var v0=10;
+var v1="soyo";
+var v2=[1,2,3];
+var v3=new date()
+
+
+console.log();//()값을 브라우저 console에 표시
+
+document.write();   // document에 표시
+
+alert();   // 윈도우 팝업창을 띄워라 >> "모달"(엔터를 안치면 다른걸 못함 알지?)
+
+promt(반환값);// 입력창 >> 	"결과값을 반환"
+
+confirm();// 확인창 >> 예, 아니오  "결과값을 반환"
+
+
+== confirm(), alert() 이용해서 ==
+
+confirm() >> "다음 사이트로 이동할까요?"
+
+true >> http://daum.net 이동 location.href=""
+
+false >> http://naver.com 이동 location.href=""
+
+이동 할 때 alert() "다음으로 이동합니다."
+
+이동 할때 alert() "네이버로 이동합니다."
+
+조건문 if문 이용
+
+if(조건){
+	//조건이 true 일때 실행
+
+}else{
+	//조건이 true 가 아닐때 실행
+
+}
+
+
+=======================
+
+
+논리연산자
+
+조건1 && 조건1   결과값 : 두조건이 모두 true일때
+true     true    true 
+
+true     false   false 
+
+false    true   false
+
+false    false   false
+
+
+ 아이디 == "soyo0823" && 비밀번호 == "1111"
+
+
+
+if(아이디 == "soyo0823" && 비밀번호 == "1111"){
+	//조건이 true 일때 실행
+	//회원이 맞습니다.
+
+}else{
+	//조건이 true 가 아닐때 실행
+	//회원이 아닙니다.
+
+}
+
+
+var userId=promt("아이디를 입력하세요");
+
+var userPw=promt("비밀번호를 입력하세요");
+
+
+
+if(userId == "soyo0823" && userPw == "1111"){
+	//조건이 true 일때 실행
+	//회원이 맞습니다.
+
+}else{
+	//조건이 true 가 아닐때 실행
+	//회원이 아닙니다.
+
+}
+
+
+	      window
+
+Document(DOM)	BOM	 내장객체
+
+
+window={
+
+	innerwidth // 속성(프로퍼티),필드
+
+	alert=function(){ // 기능(매서드)
+
+	},
+
+	promt=function(){
+	
+	},
+
+	confirm=function(){
+
+	},
+
+	document={
+		write=function(){
+
+		},
+
+		getelementbyid=function(){
+
+		},
+	},
+
+};
+
+== 위에 window안에 document(dom) 이고 그 외의 것은 bom이라고 생각하면 편함 ==
+
+window.innerwidth; // 객체의 맴버에 접근 . 접근연산자 (. 쩜)
+
+
+window.alert(); 
+
+
+window.document.write();
+
+
+
+==
+
+
+var num1=parseInt(prompt("숫자1를 입력"));
+var num2=parseInt(prompt("숫자2를 입력"));
+
+
+document.write(num1+num2);
+
+var result=prompt("연산자를 입력하세요(+-*/만 입력)"));
+
+if(result=="+"){
+
+		//"+" document.write(num1+num2);
+
+}else if(result=="-"){
+
+		//"-" document.write(num1-num2);
+
+}else if(result=="*"){
+
+		//"*" document.write(num1*num2);
+
+}else if(result=="/"){
+
+		//"/" document.write(num1/num2);
+
+}else{
+
+		//입력 연산자가 잘못됬습니다.
+
+}
+
+
+
+promt()를 이용해서 "+" 두수를 num1+num2
+
+promt()를 이용해서 "-" 두수를 num1-num2
+
+promt()를 이용해서 "*" 두수를 num1*num2
+
+promt()를 이용해서 "/" 두수를 num1/num2
+
+
+
+대입 =  >> "오른쪽의 연산의 결과를 왼쪽 변수에 대입한다"
+
+var num=100+22+(222+200);
+
+
+복합대입연산(할당 연산) "자신의 변수를 같은 값으로 변화"
+
++=   num+=10;
+
+-=   num-=10;
+
+*=   num*=10;
+
+/=   num/=10;
+
+%=   num%=10;
+
+var num=10;
+
+num=num+10; //10+10
+
+num=num+10; //10+10+10
+
+num+=10;
+
+
+
+and(&&) 조건모두 true일때 결과값이 true
+true     true    true 
+
+true     false   false 
+
+false    true   false
+
+false    false   false
+
+
+
+or(||) 하나이상의 조건이 true일때 결과값이 true
+true     true    true 
+
+true     false   true 
+
+false    true   true
+
+false    false   false
+
+
+** "연산자 실행 순서는 >> 상식"
+
+
+== 삼항연산자== 
+
+조건식 ? 조건 ture : 나머지
+
+var num=10;
+
+var result=num>10?1:0;
+
+해석 num 은 10보다 작다 그러므로, ?가 아닌 0 값을 result에 넣어준다.
+
+
+
+================ 조건문(제어문) ===============
+
+1. fi문
+
+2. switch문
+
+if(조건){
+
+	//조건이 true일 때만 실행(처리)
+
+}
+
+if(조건) 처리문;
+
+if(조건)
+      처리문
+
+
+조건이 두개 일 때
+
+If(조건){
+
+	//조건이 true 
+
+}else{
+
+	//나머지
+
+}
+
+
+조건이 2개이상 
+
+if(){
+
+
+}else if(조건){
+
+}else if(조건){
+
+}else if(조건){
+
+}else if(조건){
+
+}
+
+
+2. switch >> switch ~ case "키값은 정수(1234), a,b,c" ~ 키값은 ~ 범위를..
+
+var key=3;
+
+
+switch(key){
+
+	case 0: // key값이 0이면
+		실행문;//처리,구현
+		break;  "break문 만나면 전체 함수(로직)을 종료
+
+	case 1: 
+		실행문;//처리,구현
+		break;  "break문 만나면 전체 함수(로직)을 종료
+	
+	case 2: //
+		실행문;//처리,구현
+		break;  "break문 만나면 전체 함수(로직)을 종료
+
+	case 3: // key값이 0이면
+		실행문;//처리,구현
+		break;  "break문 만나면 전체 함수(로직)을 종료
+
+	default:
+		기본 처리문;
+	
+	
+
+}
+
+
+== 자바스크립트 선택자 ==(중요)
+
+이벤트(mouse,keyboard)를 통해서 함수를 구현..
+이벤트 >>> 이벤트를 구현 객체에 전달 해주는 역활
+
+
+
+
+>> 구조를 변경
+
+
+
+	document.querySelector(선택자);// 아이디, 클래스, 태그 "하나"
+	document.querySelectorall(선택자);// 여러개 선택
+	document.querySelector(선택자)[0];// 0번지 선택
+
+	document.getElementById('아이디');// 아이디
+	document.getElementsByClassName('클래스)
+	document.getElementsByClassName('클래스)[0]; 클래스는 여러개니까s 붙임
+	document.getElementsByTagName('div');//태그선택자
+	document.getElementsByTagName('div')[0]; 태그 선택자 index
+
+	document.getElementsByName('join')[0] 네임 들어가면 꼭 번지수 써줘야함
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

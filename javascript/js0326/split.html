@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>split</title>
+</head>
+<body>
+    <script>
+        
+        var txt1="hellow";
+        var txt2="world";
+        
+        var txt3=txt1.concat(txt2);
+        var txt4=txt1.concat(" soyo",", " ,txt2);
+        
+        
+        //
+        
+        
+        var phone="010-1234-5678";
+        var phoneSplit=phone.split("-");
+        
+        
+        console.log(phoneSplit);
+        console.log(typeof phoneSplit);
+        console.log(phoneSplit[0]);
+        console.log(phoneSplit[1]);
+        console.log(phoneSplit[2]);
+        var phonestr=phoneSplit[0].concat("-",phoneSplit[1],"-",phoneSplit[2]);
+        
+        console.log(phonestr)
+    
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/reset.css">
+	<style>
+        .banner{
+            width: 600px;
+            height: 120px;
+            border: 1px solid;
+            margin: 0 auto;
+            position: relative;
+        }
+        .banner ul>li{
+            width: 120px;
+            height: 120px;
+            border: 1px solid;
+            float: left;
+            box-sizing: border-box;
+            line-height: 120px;
+            text-align: center;
+        }
+        .banner span.arrow{
+            width: 50px;
+            height: 50px;
+            background: #ccc;
+            border-radius: 50%;
+            display: block;
+            position: absolute;
+            top:35px;
+            
+        }
+        .banner span.arrow:hover{
+            background: #555;
+            cursor: pointer;
+        }
+        .banner span.arrow.arrowLeft{
+            left: -50px;
+        }
+        .banner span.arrow.arrowRight{
+            right: -50px;
+        }
+        .on{
+            background: #f00;
+            color: #fff;
+            font-size: 40px;
+        }
+        
+        .on2{
+            background: #000;
+            color: #fff;
+            font-size: 40px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <ul>
+            <li>List1</li>
+            <li>List2</li>
+            <li>List3</li>
+            <li>List4</li>
+            <li>List5</li>
+        </ul>
+        <span class="arrow arrowLeft"></span>
+        <span class="arrow arrowRight"></span>
+    </div>
+    
+    <script>
+        var arrowLeft=$('.arrowLeft');
+        var arrowRight=$('.arrowRight');
+        var banner=$('.banner');
+        var bannerUl=$('.banner>ul');
+        
+        
+        
+        $('.arrowLeft').on('click',function(e){
+            var bannerUlLi=$('.banner>ul>li');
+            var liFirst=bannerUlLi.eq(0);
+            
+            liFirst.addClass('on').siblings().removeClass('on');
+            
+            bannerUl.append(liFirst);
+        });
+        
+        
+        $('.arrowRight').on('click',function(e){
+            var bannerUlLi=$('.banner>ul>li');
+            var liLast=bannerUlLi.eq(4);
+            
+            liLast.addClass('on2').siblings().removeClass('on2');
+            
+            bannerUl.prepend(liLast);
+        });
+        
+        var listLi=$('.banner >ul>li');
+        
+        listLi.eq(0).on('click', function(e){
+            console.log(e.target);
+            console.log($(this));
+            
+            
+//            $(this).appendTo(listLi.eq(2));두번째 li 마지막 뒤
+            $(this).appendTo(bannerUl);//두번째 li 마지막 자식 뒤
+        });
+        
+        listLi.eq(1).on('click', function(e){
+            console.log(e.target);
+            console.log($(this));
+            
+            
+//            $(this).prependTo(listLi.eq(2));두번째 li 처음 자식 앞
+            $(this).prependTo(bannerUl);//두번째 li 처음 자식 앞
+        });
+        
+        listLi.eq(4).on('click', function(e){
+            console.log(e.target);
+            console.log($(this));
+
+//            $(this).insertAfter(listLi.eq(0));
+            $(this).insertBefore(listLi.eq(0));
+        });
+        
+        bannerUl.on('click',function(e){
+            
+            //이벤트 캡쳐링
+            //이벤트 버블링
+            
+//            e.preventDefault();
+//            
+//            console.log("target: "+e.target);
+//            console.log("currentTarget: "+e.currentTarget);
+//            console.log($(this));
+            
+//            $(this).remove();
+            $(this).empty();
+            
+        });
+        
+    
+    
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>

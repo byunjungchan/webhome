@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자바스크립트</title>
+</head>
+<body>
+    <script>
+    //this란? "함수나 객체 자신을 나타낸다." << 선언 위치에 따라 범위가 다르다.
+    // window 객체의 this는 어디에서든 사용 가능
+    
+        function windowSize(){
+            
+            var width=this.innerWidth; // 브라우저의 width
+            var height=this.innerHeight; // 브라우저의 height
+            
+            return "브라우저 width="+width+", height="+height;
+            
+        }
+        
+        
+        if(this.innerWidth<=763){
+            
+            document.body.style.background="#eeffff";
+            
+        }
+        
+        
+        ////////////////////////////////
+        
+        
+        
+        var width2=1000; //전역 변수
+        
+        
+        var shape={
+            
+            width2:300
+            
+        };
+        
+        
+        var showWidth=function(){
+            
+            console.log(this.width2);
+            
+        }
+        
+        
+        ////////////////////////////////
+        
+        
+        var ob={
+            width:100,
+            height:200,
+            obMethod:function(){
+                
+                return this.width+this.height;
+                //객체 안의 this는 자신 객체를 나타낸다.
+                
+            }
+            
+        }
+        
+        
+        ////////////////////////////////
+        
+        
+        var width3=600;
+        var shape2={
+            
+            width3:300
+            
+        };
+        
+        var showwidth3=function(){
+            
+            console.log(this.width3);
+            
+        }
+        
+        shape2.getWidth=showwidth3;
+        
+        
+    
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자바스크ㅡ른</title>
+</head>
+<body>
+        <script>
+            
+            //변수 "하나의 data"
+            //배열 "하나 이상의 data 그룹화(순서대로)
+            //객체 "다양한 자료형을 맴버 구성"
+            
+            var hotel={
+                
+                name:'k_hotel',
+                rooms:40,
+                booked:25,
+                swiming:true,
+                roomType:['spring','summer','fall','winter'],
+                checkAviLability:function(){
+                    
+                    return this.rooms-this.booked;
+                    
+                }
+            };
+            
+            hotel.name;
+            hotel.rooms;
+            hotel.booked;
+            hotel.swiming;
+            hotel.roomType;
+            hotel.checkAviLability();
+    
+    
+    
+        </script>      
+</body>
+</html>

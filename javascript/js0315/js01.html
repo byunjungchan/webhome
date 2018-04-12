@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>선택자</title>
+    <script>
+        
+    window.onload=function(){
+        
+        
+    }
+    
+    </script>
+</head>
+<body>
+   
+   <button id="btnid">button_id</button>
+   <button class="btnclass">button_class</button>
+   <button class="btnclass">button_class</button>
+   <button class="btnclass">button_class</button>
+   <button>button_tag</button>
+   
+   
+   <div id="wrap">
+       
+       <div class="nav">
+           
+           nav
+
+       </div>
+   </div>
+   
+   <form action="joinok" method="post" name="joinform">
+       
+       <label for="userid">id: </label>
+       <input type="text" name="userid" id="userid">
+       <input type="password" name="userpw" id="userpw">
+       <input type="submit" value="회원가입">
+<!--       <input type="button" id="submit" value="회원가입">-->
+       
+   </form>
+   
+   <script>
+    
+       var frm=document.getElementsByName('joinform');
+           frm[0].style.background="#ff0";
+           frm[0].style.width="300px";
+           frm[0].style.height="200px";
+           console.log(frm[0].getAttribute('method')); //Attribute 속성
+           console.log(frm[0].getAttribute('action'));
+
+           console.log(frm[0].userid);
+           console.log(frm[0].userid.value);//input value get
+           console.log(frm[0].userpw);
+           console.log(frm[0].userpw.value);//input value get
+       
+       
+       
+       
+       var btnid=document.querySelector('#btnid');
+           btnid.style.background="#ff0";
+       
+       
+       var divtag=document.querySelector('div');
+           divtag.style.border="1px solid #00f";
+       
+       var btnclass=document.querySelectorAll('.btnclass');
+           console.log("전체 btnclass의 총 갯수:"+btnclass.length);
+       var btnclass1=document.querySelectorAll('.btnclass')[0];
+       var btnclass2=document.querySelectorAll('.btnclass')[1];
+       var btnclass3=document.querySelectorAll('.btnclass')[2];
+           btnclass1.style.background="#f00";
+           btnclass2.style.background="#f00";
+           btnclass3.style.background="#f00";
+       
+       var btntag=document.querySelectorAll('button')[4];
+           btntag.style.background="#00f";
+           btntag.style.color="#fff";
+       
+       
+       var btnid2=document.getElementById('btnid');
+       var btntclass2=document.getElementsByClassName('btnclass');
+           btnclass2[0];
+           btnclass2[1];
+           btnclass2[2];
+       var btntag2=document.getElementsByTagName('button');
+           btntag2[4];
+       
+       
+       
+       
+//       if(frm[0].userid.value="" || frm[0].userid.value==null){
+//           alert("아이디를 입력해주세요.")
+//           return false;
+//       }
+       
+       
+       
+       
+    
+    </script>
+   
+    
+</body>
+</html>

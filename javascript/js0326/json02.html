@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>json</title>
+</head>
+<body>
+    <script>
+    
+        var person={
+            "userId":"soyo",
+            "userPw":"1111",
+            "userAge":20,
+            "userPhone":"010-000-000"
+        }
+        //콘솔에 아이디:soyo, 비밀번호:1111, 나이:20, 전화번호:010-000-000
+        
+        console.log(person.userId);
+        console.log(person.userPw);
+        console.log(person.userAge);
+        console.log(person.userPhone);
+        
+        console.log("아이디: "+person.userId+", 비밀번호: "+person.userPw+", 나이: "+person.userAge+", 전화번호: "+person.userPhone);
+        
+        console.log(person['userId']);
+        console.log(person['userPw']);
+        console.log(person['userAge']);
+        console.log(person['userPhone']);
+        
+        person.userAge=30;
+        console.log(person['userAge']);
+        
+        person['userAge']=40;
+        console.log(person['userAge']);
+        
+    
+    
+    
+    </script>
+</body>
+</html>

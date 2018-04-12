@@ -1,0 +1,72 @@
+@charset "utf-8";
+#wrap{
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+    font-size: 40px;
+    text-align: center;
+    border: 1px solid;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background: #fff000;
+    line-height: 100px;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    background: #000fff;
+    line-height: 100px;
+}
+/* section.contents 시작 */
+section.contents{
+    width: 100%;
+    height: 400px;
+    background: #ccc;
+    position: relative;/* 나를 중심 */  
+}
+
+section.contents section.top{
+    width: 400px;
+    height: 200px;
+    background: #888;
+    position: absolute;/* section.contents 재배치 */
+    top:0px;
+    left: 0px;
+    line-height: 200px;/* 세로 가운데 */
+    color: #fff;
+}
+
+section.contents article{
+    width: 400px;
+    height: 200px;
+    background: #555;
+    position: absolute;/* section.contents 재배치 */
+    top:200px;
+    left: 0px;
+    line-height: 200px;/* 세로 가운데 */
+    color: #fff;
+}
+
+section.contents aside{
+    width: 200px;
+    height: 400px;
+    background: #f0f;
+    position: absolute;/* section.contents 재배치 */
+    bottom:0px;
+    right: 0px;
+    line-height: 400px;/* 세로 가운데 */
+    color: #fff;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background: #f0f0ff;
+    line-height: 100px;
+}
+
+
