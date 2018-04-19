@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+#wrap{
+    width: 100%;
+    height: auto;
+}
+
+.bg img{
+    position: relative;
+    left: 0;
+    top: 100px;
+    z-index: -1;
+}

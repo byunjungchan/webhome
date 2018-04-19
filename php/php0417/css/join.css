@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+.join{
+    width: 98%;
+    max-width: 1px solid;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    padding: 10px;
+    
+}
+
+.join h1.title{
+    line-height: 100px;
+    text-align: center;
+}
+
+.join .contents{
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.join .contents ul>li{
+    border: 1px solid;
+    line-height: 60px;
+    margin: 10px 0;
+/*    background: #ccc;*/
+}
+
+.join .contents ul>li input[type=text]{
+    height: 60px;
+    width: 100%;
+    border: 0px;
+}
+
+.join .contents ul>li input[type=password]{
+    height: 60px;
+    width: 100%;
+    border: 0px;
+}
+
+.join .contents ul>li input.Year{
+    width: 60%;
+    height: 60px;
+    float: left;
+    
+}

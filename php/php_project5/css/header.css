@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+#wrap{
+    width: 100%;
+    height: auto;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    background: #4f4f4f;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.header .gnb{
+    width: 98%;
+    max-width: 1000px;
+    height: 50px;
+    margin: 0 auto;
+/*    background: #ccc;*/
+    margin-top: 50px;
+}
+
+.header .gnb>ul>li{
+    width: 200px;
+    height: 50px;
+    float: left;
+/*
+    border: 1px solid;
+    box-sizing: border-box;
+*/
+    text-align: center;
+}
+
+.header .gnb>ul>li a{
+    display: block;
+    line-height: 50px;
+    color: #f8f8f8;
+}
+
+.header .gnb>ul>li ul.sub{
+    display: none;
+    background: #f6f4f0;
+    line-height: 50px;
+    color: #555;
+    overflow: hidden;
+    width: 300%;
+    font-size: 12px
+}
+
+.header .gnb>ul>li ul.sub>li{
+    width: 33.333%;
+    float: left;
+}
+
+.header .gnb>ul>li:hover ul.sub{
+    display: block;
+}
+
+.header .gnb>ul>li ul.sub.fiv li{
+    width: 24%;
+}
+
+.header .box{
+    width: 100%;
+    height: 50px;
+    background: #f6f4f0;
+    display: none;
+}
+
+.header .gnb>ul>li ul.sub.two{
+    position: relative;
+    left: -200px;
+}
+
+.header .gnb>ul>li ul.sub.thr{
+    position: relative;
+    left: -200px;
+}
+
+.header .gnb>ul>li ul.sub.for{
+    position: relative;
+    left: -200px;
+}
+
+.header .gnb>ul>li ul.sub.fiv{
+    position: relative;
+    left: -400px;
+}
+
+.header .gnb>ul>li ul.sub.fiv a{
+    color:#555;
+}
+
+.header .gnb>ul>li span.sessionId{
+    display: block;
+    width: 200px;
+    height: 50px;
+    background: #f00;
+    position: absolute;
+    top:200px;
+    right: 0;
+}
+
+

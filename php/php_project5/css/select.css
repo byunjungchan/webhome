@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+.memberSelect{
+    width: 98%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 200px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    position: relative;
+    padding: 33px;
+}
+
+.memberSelect h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.memberSelect ul>li{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.memberSelect ul>li:nth-child(7){
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.memberSelect ul>li a{
+    color: #333;
+}
