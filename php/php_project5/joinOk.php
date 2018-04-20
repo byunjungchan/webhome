@@ -55,7 +55,7 @@ if(userName==""||userName==null){
 }
 
 
-$query="insert into JoinMember2(userId,userPw,userName,userYear,userGender,userPhone)
+$query="insert into joinmember2(userId,userPw,userName,userYear,userGender,userPhone)
 values('$userId','$userPw','$userName','$userYear','$userGender','$userPhone')";
 
 $result=$conn->query($query);//쿼리문을 실행 성공하면 1반환

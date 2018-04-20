@@ -21,7 +21,7 @@ $userYear=$_POST['userYear'];
 $userGender=$_POST['userGender'];
 $userPhone=implode('-',$_POST['userPhone']);//배열 >> 문자열
 
-$query="update joinMember2 ";
+$query="update joinmember2 ";
 $query.="set userPw='$userPw',userName='$userName',userYear='$userYear',userPhone='$userPhone',userPw='$userPw' ";
 $query.="where userId='$userId'";
 

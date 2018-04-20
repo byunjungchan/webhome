@@ -1,4 +1,7 @@
 <?php
+header("Content-Type:text/html;charset=UTF-8");
+?>
+<?php
 session_start();
 if(!isset($_SESSION['sessionId'])){
     echo"
@@ -14,7 +17,7 @@ if(!isset($_SESSION['sessionId'])){
 include "dbConnect.php";
 
 $sessionId=$_SESSION['sessionId'];
-$query="select * from joinMember2 where userId='$sessionId'";
+$query="select * from joinmember2 where userId='$sessionId'";
 $result=$conn->query($query);
 
 

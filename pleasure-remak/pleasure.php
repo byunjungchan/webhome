@@ -83,7 +83,8 @@
  기록하고 있는 그가! 다시한번 한국을 방문합니다.</p>
                 </div>
                 <div class="list7">
-                    <img src="./img/div_10_img.jpg" alt="">
+                   <iframe width="1200" height="400" src="https://www.youtube.com/embed/P8jOQUsTU9o?&vq=hd720&autoplay=0" frameborder="0" allowfullscreen></iframe>
+<!--                    <img src="./img/div_10_img.jpg" alt="">-->
                     <h1>기다렸던 그들, 콜드플레이(Coldplay)의 컴백</h1>
                     <p>콜드플레이의 새 앨범 [A Head Full Of Dreams]이 발매되었습니다. 6집 [Ghost Stories]이 어두운 '밤'의 기운을 담아 멜랑콜리한 선율을 노래했다면,<br> 이번 앨범은 보다 활기차고 다채로운 색을 지닌 '낮'으로의 변화를 담았다고 하여, 더욱 기대감을 높였다고 합니다. 보다 활기찬 선율과 영롱한 사운드,<br>그리고 다양한 참여진까지.. 그 어느때보다 탄탄하게 돌아온 콜드플레이와 함께하세요!</p>
                 </div>
@@ -133,6 +134,7 @@
         <?php include "footer.php";?>
     </div>
     
-    
+    <script src="js/scroll.js"></script>
+
 </body>
 </html>

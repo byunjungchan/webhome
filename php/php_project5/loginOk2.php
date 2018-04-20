@@ -1,4 +1,7 @@
 <?php
+header("Content-Type:text/html;charset=UTF-8");
+?>
+<?php
 
 include "dbConnect.php";//userid, userpw db에 존재하면 로그인 성공
 
@@ -35,7 +38,7 @@ $userPw = $_POST['userPw'];
         exit;
     }
     
-    $query="select * from joinMember2 where userId='$userId' and userPw='$userPw'";
+    $query="select * from joinmember2 where userId='$userId' and userPw='$userPw'";
 
     $result=$conn->query($query);
     

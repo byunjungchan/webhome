@@ -1,4 +1,7 @@
 <?php
+header("Content-Type:text/html;charset=UTF-8");
+?>
+<?php
 include "dbConnect.php";
 
 if(!isset($_POST['userId'])||!isset($_POST['userPw'])){
@@ -24,7 +27,7 @@ if($userPw==""||$userPw==null){
     exit;
 }
 
-$query="delete from joinMember2 where userId='$userId' and userPw='$userPw'";
+$query="delete from joinmember2 where userId='$userId' and userPw='$userPw'";
 $num=$conn->query($query);//성공하면 1값을 반환
 
 if($num==1){
